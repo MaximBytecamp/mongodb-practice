@@ -3,7 +3,8 @@
 Репозиторий к «Справочнику по MongoDB»: учебные базы, практические работы с
 готовыми решениями и контрольные точки.
 
-Справочник: [MaximBytecamp/mongodb_theory_makarov](https://github.com/MaximBytecamp/mongodb_theory_makarov).
+Справочник: **https://maximbytecamp.github.io/mongodb_theory_makarov/**
+(исходник — [MaximBytecamp/mongodb_theory_makarov](https://github.com/MaximBytecamp/mongodb_theory_makarov)).
 Автор курса — Макаров Максим Николаевич.
 
 ## Что внутри
