@@ -1,0 +1,52 @@
+[
+ {
+  "_id": "cat-tech",
+  "title": "Техника",
+  "parent_id": null
+ },
+ {
+  "_id": "cat-comp",
+  "title": "Компьютеры",
+  "parent_id": "cat-tech"
+ },
+ {
+  "_id": "cat-note",
+  "title": "Ноутбуки",
+  "parent_id": "cat-comp"
+ },
+ {
+  "_id": "cat-parts",
+  "title": "Комплектующие",
+  "parent_id": "cat-comp"
+ },
+ {
+  "_id": "cat-phone",
+  "title": "Телефоны и гаджеты",
+  "parent_id": "cat-tech"
+ },
+ {
+  "_id": "cat-smart",
+  "title": "Смартфоны",
+  "parent_id": "cat-phone"
+ },
+ {
+  "_id": "cat-acc",
+  "title": "Аксессуары",
+  "parent_id": "cat-phone"
+ },
+ {
+  "_id": "cat-periph",
+  "title": "Периферия",
+  "parent_id": "cat-comp"
+ },
+ {
+  "_id": "cat-audio",
+  "title": "Аудио",
+  "parent_id": "cat-periph"
+ },
+ {
+  "_id": "cat-input",
+  "title": "Клавиатуры и мыши",
+  "parent_id": "cat-periph"
+ }
+]

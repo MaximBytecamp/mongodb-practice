@@ -1,0 +1,34 @@
+[
+  {
+    "_id": "p-101",
+    "sku": "SKU-PR-101",
+    "title": "Подставка для ноутбука Ugreen",
+    "brand": "Ugreen",
+    "category": "периферия",
+    "price": 2490,
+    "specs": ["алюминий", "регулируемый угол"],
+    "stock": [{ "warehouse": "Москва-1", "qty": 14 }],
+    "rating": 4.4,
+    "reviews": 0
+  },
+  {
+    "_id": "p-102",
+    "sku": "SKU-PR-102",
+    "title": "Док-станция Baseus 6 в 1",
+    "brand": "Baseus",
+    "category": "периферия",
+    "price": 5890,
+    "specs": ["USB-C", "HDMI 4K", "SD"],
+    "stock": [{ "warehouse": "Москва-2", "qty": 7 }, { "warehouse": "Екатеринбург", "qty": 3 }],
+    "rating": 4.2,
+    "reviews": 0
+  },
+  {
+    "_id": "p-103",
+    "sku": "SKU-CP-103",
+    "title": "Черновик карточки товара",
+    "category": "комплектующие",
+    "price": 0,
+    "status": "черновик"
+  }
+]

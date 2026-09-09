@@ -1,0 +1,170 @@
+[
+ {
+  "_id": "w-001",
+  "sku": "SKU-NB-001",
+  "title": "Ноутбук Lenovo IdeaPad 3",
+  "category": "ноутбуки",
+  "qty_accounted": 25,
+  "shelf": "B-01"
+ },
+ {
+  "_id": "w-002",
+  "sku": "SKU-NB-002",
+  "title": "Ноутбук ASUS VivoBook 15",
+  "category": "ноутбуки",
+  "qty_accounted": 20,
+  "shelf": "C-06"
+ },
+ {
+  "_id": "w-003",
+  "sku": "SKU-NB-003",
+  "title": "Ноутбук HP Pavilion 14",
+  "category": "ноутбуки",
+  "qty_accounted": 40,
+  "shelf": "B-05"
+ },
+ {
+  "_id": "w-004",
+  "sku": "SKU-NB-004",
+  "title": "Ноутбук Apple MacBook Air 13",
+  "category": "ноутбуки",
+  "qty_accounted": 40,
+  "shelf": "A-01"
+ },
+ {
+  "_id": "w-005",
+  "sku": "SKU-NB-005",
+  "title": "Ноутбук Acer Nitro V15",
+  "category": "ноутбуки",
+  "qty_accounted": 20,
+  "shelf": "A-06"
+ },
+ {
+  "_id": "w-006",
+  "sku": "SKU-PH-006",
+  "title": "Смартфон Xiaomi Redmi Note 13",
+  "category": "смартфоны",
+  "qty_accounted": 8,
+  "shelf": "D-02"
+ },
+ {
+  "_id": "w-007",
+  "sku": "SKU-PH-007",
+  "title": "Смартфон Samsung Galaxy A55",
+  "category": "смартфоны",
+  "qty_accounted": 0,
+  "shelf": "C-06"
+ },
+ {
+  "_id": "w-008",
+  "sku": "SKU-PH-008",
+  "title": "Смартфон Apple iPhone 15",
+  "category": "смартфоны",
+  "qty_accounted": 20,
+  "shelf": "D-13"
+ },
+ {
+  "_id": "w-009",
+  "sku": "SKU-PH-009",
+  "title": "Смартфон realme 12 Pro",
+  "category": "смартфоны",
+  "qty_accounted": 20,
+  "shelf": "D-09"
+ },
+ {
+  "_id": "w-010",
+  "sku": "SKU-PR-010",
+  "title": "Клавиатура Keychron K2",
+  "category": "периферия",
+  "qty_accounted": 40,
+  "shelf": "C-06"
+ },
+ {
+  "_id": "w-011",
+  "sku": "SKU-PR-011",
+  "title": "Мышь Logitech MX Master 3S",
+  "category": "периферия",
+  "qty_accounted": 12,
+  "shelf": "D-09"
+ },
+ {
+  "_id": "w-012",
+  "sku": "SKU-PR-012",
+  "title": "Монитор Dell P2422H",
+  "category": "периферия",
+  "qty_accounted": 25,
+  "shelf": "D-22"
+ },
+ {
+  "_id": "w-013",
+  "sku": "SKU-PR-013",
+  "title": "Наушники Sony WH-1000XM5",
+  "category": "периферия",
+  "qty_accounted": 8,
+  "shelf": "D-08"
+ },
+ {
+  "_id": "w-014",
+  "sku": "SKU-PR-014",
+  "title": "Веб-камера Logitech C920",
+  "category": "периферия",
+  "qty_accounted": 25,
+  "shelf": "B-08"
+ },
+ {
+  "_id": "w-015",
+  "sku": "SKU-CP-015",
+  "title": "SSD Samsung 980 1 ТБ",
+  "category": "комплектующие",
+  "qty_accounted": 25,
+  "shelf": "A-10"
+ },
+ {
+  "_id": "w-016",
+  "sku": "SKU-CP-016",
+  "title": "Оперативная память Kingston 16 ГБ",
+  "category": "комплектующие",
+  "qty_accounted": 8,
+  "shelf": "A-14"
+ },
+ {
+  "_id": "w-017",
+  "sku": "SKU-CP-017",
+  "title": "Видеокарта NVIDIA RTX 4060",
+  "category": "комплектующие",
+  "qty_accounted": 25,
+  "shelf": "B-09"
+ },
+ {
+  "_id": "w-018",
+  "sku": "SKU-CP-018",
+  "title": "Блок питания be quiet! 650 Вт",
+  "category": "комплектующие",
+  "qty_accounted": 40,
+  "shelf": "B-14"
+ },
+ {
+  "_id": "w-019",
+  "sku": "SKU-AC-019",
+  "title": "Рюкзак для ноутбука Xiaomi",
+  "category": "аксессуары",
+  "qty_accounted": 0,
+  "shelf": "D-21"
+ },
+ {
+  "_id": "w-020",
+  "sku": "SKU-AC-020",
+  "title": "Кабель USB-C 2 м",
+  "category": "аксессуары",
+  "qty_accounted": 8,
+  "shelf": "D-12"
+ },
+ {
+  "_id": "w-021",
+  "sku": "SKU-AC-021",
+  "title": "Powerbank Anker 20000 мА·ч",
+  "category": "аксессуары",
+  "qty_accounted": 5,
+  "shelf": "A-01"
+ }
+]

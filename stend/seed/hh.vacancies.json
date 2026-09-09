@@ -1,0 +1,113 @@
+[{
+	"_id": "v-001",
+	"title": "Junior Python-разработчик",
+	"company": "Тензор",
+	"city": "Ярославль",
+	"salary": {
+		"from": 60000,
+		"to": 90000
+	},
+	"published": {
+		"$date": "2026-08-28T09:00:00Z"
+	},
+	"is_open": true
+},
+{
+	"_id": "v-004",
+	"title": "Тестировщик",
+	"company": "МедСофт",
+	"city": "Казань",
+	"salary": {
+		"from": 70000,
+		"to": 95000
+	},
+	"published": {
+		"$date": "2026-08-28T09:00:00Z"
+	},
+	"is_open": true
+},
+{
+	"_id": "v-005",
+	"title": "Backend-разработчик .NET",
+	"company": "Тензор",
+	"city": "Ярославль",
+	"salary": {
+		"from": 100000,
+		"to": 150000
+	},
+	"published": {
+		"$date": "2026-08-28T09:00:00Z"
+	},
+	"is_open": true
+},
+{
+	"_id": "v-006",
+	"title": "Frontend-разработчик",
+	"company": "Retail Lab",
+	"city": "Санкт-Петербург",
+	"salary": {
+		"from": 90000,
+		"to": 140000
+	},
+	"published": {
+		"$date": "2026-08-28T09:00:00Z"
+	},
+	"is_open": true
+},
+{
+	"_id": "v-002",
+	"title": "Инженер сопровождения БД",
+	"company": "ЯрКом",
+	"city": "Ярославль",
+	"salary": {
+		"from": 80000,
+		"to": 120000
+	},
+	"published": {
+		"$date": "2026-08-28T09:00:00Z"
+	},
+	"is_open": true
+},
+{
+	"_id": "v-007",
+	"title": "Администратор баз данных",
+	"company": "Мосэнергосвязь",
+	"city": "Москва",
+	"salary": {
+		"from": 110000,
+		"to": 160000
+	},
+	"published": {
+		"$date": "2026-08-28T09:00:00Z"
+	},
+	"is_open": true
+},
+{
+	"_id": "v-003",
+	"title": "Аналитик данных",
+	"company": "Ozon Tech",
+	"city": "Москва",
+	"salary": {
+		"from": 120000,
+		"to": 180000
+	},
+	"published": {
+		"$date": "2026-08-28T09:00:00Z"
+	},
+	"is_open": true
+},
+{
+	"_id": "v-008",
+	"title": "Data-инженер",
+	"company": "Ozon Tech",
+	"city": "Москва",
+	"salary": {
+		"from": 140000,
+		"to": 200000
+	},
+	"published": {
+		"$date": "2026-08-28T09:00:00Z"
+	},
+	"is_open": true
+}]
+

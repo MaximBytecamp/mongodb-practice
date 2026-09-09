@@ -1,0 +1,4459 @@
+[
+ {
+  "_id": "o-0001",
+  "number": "2026-0001",
+  "customer_id": "c-018",
+  "created": {
+   "$date": "2026-04-12T13:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-AC-019",
+    "title": "Рюкзак для ноутбука Xiaomi",
+    "category": "аксессуары",
+    "qty": 2,
+    "price": 2990
+   }
+  ],
+  "total": 5980,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "пункт выдачи",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0002",
+  "number": "2026-0002",
+  "customer_id": "c-007",
+  "created": {
+   "$date": "2026-04-15T17:00:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-NB-002",
+    "title": "Ноутбук ASUS VivoBook 15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 51490
+   },
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 1,
+    "price": 6790
+   },
+   {
+    "sku": "SKU-PR-013",
+    "title": "Наушники Sony WH-1000XM5",
+    "category": "периферия",
+    "qty": 3,
+    "price": 34990
+   }
+  ],
+  "total": 163250,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "курьер",
+   "days": 4
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0003",
+  "number": "2026-0003",
+  "customer_id": "c-007",
+  "created": {
+   "$date": "2026-04-22T21:15:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-003",
+    "title": "Ноутбук HP Pavilion 14",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 67900
+   },
+   {
+    "sku": "SKU-PR-011",
+    "title": "Мышь Logitech MX Master 3S",
+    "category": "периферия",
+    "qty": 2,
+    "price": 9490
+   }
+  ],
+  "total": 86880,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "почта",
+   "days": 2
+  },
+  "promo": "FIRST5"
+ },
+ {
+  "_id": "o-0004",
+  "number": "2026-0004",
+  "customer_id": "c-013",
+  "created": {
+   "$date": "2026-03-29T16:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 3,
+    "price": 6790
+   },
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 2,
+    "price": 18990
+   },
+   {
+    "sku": "SKU-PR-013",
+    "title": "Наушники Sony WH-1000XM5",
+    "category": "периферия",
+    "qty": 1,
+    "price": 34990
+   },
+   {
+    "sku": "SKU-AC-021",
+    "title": "Powerbank Anker 20000 мА·ч",
+    "category": "аксессуары",
+    "qty": 3,
+    "price": 4290
+   }
+  ],
+  "total": 106210,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "пункт выдачи",
+   "days": 2
+  },
+  "promo": "LOYAL15"
+ },
+ {
+  "_id": "o-0005",
+  "number": "2026-0005",
+  "customer_id": "c-003",
+  "created": {
+   "$date": "2026-06-15T13:45:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 18990
+   }
+  ],
+  "total": 56970,
+  "payment": {
+   "method": "СБП",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "почта",
+   "days": 8
+  }
+ },
+ {
+  "_id": "o-0006",
+  "number": "2026-0006",
+  "customer_id": "c-011",
+  "created": {
+   "$date": "2026-03-13T09:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-AC-020",
+    "title": "Кабель USB-C 2 м",
+    "category": "аксессуары",
+    "qty": 3,
+    "price": 790
+   }
+  ],
+  "total": 2370,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 7
+  },
+  "promo": "LOYAL15"
+ },
+ {
+  "_id": "o-0007",
+  "number": "2026-0007",
+  "customer_id": "c-013",
+  "created": {
+   "$date": "2026-06-15T10:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-015",
+    "title": "SSD Samsung 980 1 ТБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 7890
+   },
+   {
+    "sku": "SKU-NB-003",
+    "title": "Ноутбук HP Pavilion 14",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 67900
+   }
+  ],
+  "total": 75790,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "пункт выдачи",
+   "days": 5
+  }
+ },
+ {
+  "_id": "o-0008",
+  "number": "2026-0008",
+  "customer_id": "c-011",
+  "created": {
+   "$date": "2026-07-07T09:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-017",
+    "title": "Видеокарта NVIDIA RTX 4060",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 38990
+   },
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 79990
+   },
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 1,
+    "price": 6790
+   }
+  ],
+  "total": 285750,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0009",
+  "number": "2026-0009",
+  "customer_id": "c-010",
+  "created": {
+   "$date": "2026-08-26T16:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PR-012",
+    "title": "Монитор Dell P2422H",
+    "category": "периферия",
+    "qty": 2,
+    "price": 21990
+   },
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 1,
+    "price": 6790
+   },
+   {
+    "sku": "SKU-NB-005",
+    "title": "Ноутбук Acer Nitro V15",
+    "category": "ноутбуки",
+    "qty": 3,
+    "price": 89990
+   }
+  ],
+  "total": 320740,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "пункт выдачи",
+   "days": 2
+  }
+ },
+ {
+  "_id": "o-0010",
+  "number": "2026-0010",
+  "customer_id": "c-020",
+  "created": {
+   "$date": "2026-05-10T09:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-AC-020",
+    "title": "Кабель USB-C 2 м",
+    "category": "аксессуары",
+    "qty": 3,
+    "price": 790
+   },
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 2,
+    "price": 18990
+   },
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 79990
+   }
+  ],
+  "total": 120340,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "пункт выдачи",
+   "days": 6
+  },
+  "promo": "FIRST5"
+ },
+ {
+  "_id": "o-0011",
+  "number": "2026-0011",
+  "customer_id": "c-005",
+  "created": {
+   "$date": "2026-07-27T12:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-001",
+    "title": "Ноутбук Lenovo IdeaPad 3",
+    "category": "ноутбуки",
+    "qty": 2,
+    "price": 42990
+   }
+  ],
+  "total": 85980,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "пункт выдачи",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0012",
+  "number": "2026-0012",
+  "customer_id": "c-001",
+  "created": {
+   "$date": "2026-07-19T16:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 79990
+   },
+   {
+    "sku": "SKU-AC-020",
+    "title": "Кабель USB-C 2 м",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 790
+   },
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 114990
+   },
+   {
+    "sku": "SKU-PR-010",
+    "title": "Клавиатура Keychron K2",
+    "category": "периферия",
+    "qty": 3,
+    "price": 8990
+   }
+  ],
+  "total": 222740,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 6
+  }
+ },
+ {
+  "_id": "o-0013",
+  "number": "2026-0013",
+  "customer_id": "c-012",
+  "created": {
+   "$date": "2026-03-25T10:30:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-PR-012",
+    "title": "Монитор Dell P2422H",
+    "category": "периферия",
+    "qty": 1,
+    "price": 21990
+   },
+   {
+    "sku": "SKU-AC-020",
+    "title": "Кабель USB-C 2 м",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 790
+   },
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 1,
+    "price": 6790
+   },
+   {
+    "sku": "SKU-NB-001",
+    "title": "Ноутбук Lenovo IdeaPad 3",
+    "category": "ноутбуки",
+    "qty": 3,
+    "price": 42990
+   }
+  ],
+  "total": 158540,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "курьер",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0014",
+  "number": "2026-0014",
+  "customer_id": "c-010",
+  "created": {
+   "$date": "2026-07-23T19:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-016",
+    "title": "Оперативная память Kingston 16 ГБ",
+    "category": "комплектующие",
+    "qty": 2,
+    "price": 4590
+   },
+   {
+    "sku": "SKU-PR-012",
+    "title": "Монитор Dell P2422H",
+    "category": "периферия",
+    "qty": 1,
+    "price": 21990
+   },
+   {
+    "sku": "SKU-CP-018",
+    "title": "Блок питания be quiet! 650 Вт",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 8490
+   }
+  ],
+  "total": 39660,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "пункт выдачи",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0015",
+  "number": "2026-0015",
+  "customer_id": "c-011",
+  "created": {
+   "$date": "2026-04-17T08:45:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-CP-016",
+    "title": "Оперативная память Kingston 16 ГБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 4590
+   }
+  ],
+  "total": 4590,
+  "payment": {
+   "method": "картой при получении",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 9
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0016",
+  "number": "2026-0016",
+  "customer_id": "c-004",
+  "created": {
+   "$date": "2026-08-14T16:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PR-011",
+    "title": "Мышь Logitech MX Master 3S",
+    "category": "периферия",
+    "qty": 2,
+    "price": 9490
+   }
+  ],
+  "total": 18980,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0017",
+  "number": "2026-0017",
+  "customer_id": "c-008",
+  "created": {
+   "$date": "2026-04-15T17:15:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-016",
+    "title": "Оперативная память Kingston 16 ГБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 4590
+   },
+   {
+    "sku": "SKU-CP-017",
+    "title": "Видеокарта NVIDIA RTX 4060",
+    "category": "комплектующие",
+    "qty": 2,
+    "price": 38990
+   },
+   {
+    "sku": "SKU-AC-021",
+    "title": "Powerbank Anker 20000 мА·ч",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 4290
+   },
+   {
+    "sku": "SKU-PR-013",
+    "title": "Наушники Sony WH-1000XM5",
+    "category": "периферия",
+    "qty": 3,
+    "price": 34990
+   }
+  ],
+  "total": 191830,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0018",
+  "number": "2026-0018",
+  "customer_id": "c-002",
+  "created": {
+   "$date": "2026-05-09T21:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-018",
+    "title": "Блок питания be quiet! 650 Вт",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 8490
+   },
+   {
+    "sku": "SKU-CP-017",
+    "title": "Видеокарта NVIDIA RTX 4060",
+    "category": "комплектующие",
+    "qty": 2,
+    "price": 38990
+   },
+   {
+    "sku": "SKU-PR-010",
+    "title": "Клавиатура Keychron K2",
+    "category": "периферия",
+    "qty": 1,
+    "price": 8990
+   },
+   {
+    "sku": "SKU-AC-021",
+    "title": "Powerbank Anker 20000 мА·ч",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 4290
+   }
+  ],
+  "total": 99750,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "курьер",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0019",
+  "number": "2026-0019",
+  "customer_id": "c-011",
+  "created": {
+   "$date": "2026-07-22T15:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 18990
+   }
+  ],
+  "total": 18990,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 3
+  }
+ },
+ {
+  "_id": "o-0020",
+  "number": "2026-0020",
+  "customer_id": "c-012",
+  "created": {
+   "$date": "2026-07-12T10:30:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 3,
+    "price": 114990
+   },
+   {
+    "sku": "SKU-AC-020",
+    "title": "Кабель USB-C 2 м",
+    "category": "аксессуары",
+    "qty": 2,
+    "price": 790
+   }
+  ],
+  "total": 346550,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "пункт выдачи",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0021",
+  "number": "2026-0021",
+  "customer_id": "c-004",
+  "created": {
+   "$date": "2026-04-17T17:00:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 2,
+    "price": 18990
+   },
+   {
+    "sku": "SKU-NB-001",
+    "title": "Ноутбук Lenovo IdeaPad 3",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 42990
+   },
+   {
+    "sku": "SKU-PR-011",
+    "title": "Мышь Logitech MX Master 3S",
+    "category": "периферия",
+    "qty": 1,
+    "price": 9490
+   }
+  ],
+  "total": 90460,
+  "payment": {
+   "method": "карта",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "почта",
+   "days": 5
+  }
+ },
+ {
+  "_id": "o-0022",
+  "number": "2026-0022",
+  "customer_id": "c-015",
+  "created": {
+   "$date": "2026-04-30T21:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-015",
+    "title": "SSD Samsung 980 1 ТБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 7890
+   },
+   {
+    "sku": "SKU-PR-012",
+    "title": "Монитор Dell P2422H",
+    "category": "периферия",
+    "qty": 3,
+    "price": 21990
+   },
+   {
+    "sku": "SKU-PH-009",
+    "title": "Смартфон realme 12 Pro",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 27490
+   },
+   {
+    "sku": "SKU-PR-010",
+    "title": "Клавиатура Keychron K2",
+    "category": "периферия",
+    "qty": 3,
+    "price": 8990
+   }
+  ],
+  "total": 128320,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "курьер",
+   "days": 7
+  }
+ },
+ {
+  "_id": "o-0023",
+  "number": "2026-0023",
+  "customer_id": "c-019",
+  "created": {
+   "$date": "2026-04-02T12:00:00.000Z"
+  },
+  "status": "в пути",
+  "items": [
+   {
+    "sku": "SKU-CP-018",
+    "title": "Блок питания be quiet! 650 Вт",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 8490
+   }
+  ],
+  "total": 8490,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "почта",
+   "days": 6
+  },
+  "promo": "LOYAL15"
+ },
+ {
+  "_id": "o-0024",
+  "number": "2026-0024",
+  "customer_id": "c-005",
+  "created": {
+   "$date": "2026-06-30T19:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 79990
+   },
+   {
+    "sku": "SKU-PR-013",
+    "title": "Наушники Sony WH-1000XM5",
+    "category": "периферия",
+    "qty": 1,
+    "price": 34990
+   }
+  ],
+  "total": 274960,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "почта",
+   "days": 6
+  },
+  "promo": "LOYAL15"
+ },
+ {
+  "_id": "o-0025",
+  "number": "2026-0025",
+  "customer_id": "c-015",
+  "created": {
+   "$date": "2026-07-08T09:30:00.000Z"
+  },
+  "status": "в пути",
+  "items": [
+   {
+    "sku": "SKU-NB-005",
+    "title": "Ноутбук Acer Nitro V15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 89990
+   },
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 79990
+   },
+   {
+    "sku": "SKU-PR-013",
+    "title": "Наушники Sony WH-1000XM5",
+    "category": "периферия",
+    "qty": 1,
+    "price": 34990
+   },
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 1,
+    "price": 6790
+   }
+  ],
+  "total": 211760,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0026",
+  "number": "2026-0026",
+  "customer_id": "c-009",
+  "created": {
+   "$date": "2026-05-02T10:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-015",
+    "title": "SSD Samsung 980 1 ТБ",
+    "category": "комплектующие",
+    "qty": 3,
+    "price": 7890
+   }
+  ],
+  "total": 23670,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "почта",
+   "days": 5
+  }
+ },
+ {
+  "_id": "o-0027",
+  "number": "2026-0027",
+  "customer_id": "c-002",
+  "created": {
+   "$date": "2026-08-18T22:30:00.000Z"
+  },
+  "status": "в пути",
+  "items": [
+   {
+    "sku": "SKU-PR-012",
+    "title": "Монитор Dell P2422H",
+    "category": "периферия",
+    "qty": 1,
+    "price": 21990
+   },
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 79990
+   },
+   {
+    "sku": "SKU-NB-005",
+    "title": "Ноутбук Acer Nitro V15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 89990
+   }
+  ],
+  "total": 191970,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 2
+  }
+ },
+ {
+  "_id": "o-0028",
+  "number": "2026-0028",
+  "customer_id": "c-002",
+  "created": {
+   "$date": "2026-04-19T18:45:00.000Z"
+  },
+  "status": "в пути",
+  "items": [
+   {
+    "sku": "SKU-NB-005",
+    "title": "Ноутбук Acer Nitro V15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 89990
+   },
+   {
+    "sku": "SKU-NB-002",
+    "title": "Ноутбук ASUS VivoBook 15",
+    "category": "ноутбуки",
+    "qty": 3,
+    "price": 51490
+   }
+  ],
+  "total": 244460,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0029",
+  "number": "2026-0029",
+  "customer_id": "c-013",
+  "created": {
+   "$date": "2026-05-22T18:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-015",
+    "title": "SSD Samsung 980 1 ТБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 7890
+   },
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 2,
+    "price": 114990
+   },
+   {
+    "sku": "SKU-NB-002",
+    "title": "Ноутбук ASUS VivoBook 15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 51490
+   }
+  ],
+  "total": 289360,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "курьер",
+   "days": 9
+  }
+ },
+ {
+  "_id": "o-0030",
+  "number": "2026-0030",
+  "customer_id": "c-013",
+  "created": {
+   "$date": "2026-05-13T21:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PH-009",
+    "title": "Смартфон realme 12 Pro",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 27490
+   }
+  ],
+  "total": 27490,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "пункт выдачи",
+   "days": 5
+  }
+ },
+ {
+  "_id": "o-0031",
+  "number": "2026-0031",
+  "customer_id": "c-004",
+  "created": {
+   "$date": "2026-03-14T21:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-AC-021",
+    "title": "Powerbank Anker 20000 мА·ч",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 4290
+   },
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 114990
+   },
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 2,
+    "price": 6790
+   }
+  ],
+  "total": 132860,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "курьер",
+   "days": 5
+  }
+ },
+ {
+  "_id": "o-0032",
+  "number": "2026-0032",
+  "customer_id": "c-002",
+  "created": {
+   "$date": "2026-07-31T19:15:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 3,
+    "price": 6790
+   },
+   {
+    "sku": "SKU-AC-021",
+    "title": "Powerbank Anker 20000 мА·ч",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 4290
+   }
+  ],
+  "total": 24660,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "почта",
+   "days": 3
+  },
+  "promo": "LOYAL15"
+ },
+ {
+  "_id": "o-0033",
+  "number": "2026-0033",
+  "customer_id": "c-018",
+  "created": {
+   "$date": "2026-08-19T13:00:00.000Z"
+  },
+  "status": "в пути",
+  "items": [
+   {
+    "sku": "SKU-CP-016",
+    "title": "Оперативная память Kingston 16 ГБ",
+    "category": "комплектующие",
+    "qty": 2,
+    "price": 4590
+   }
+  ],
+  "total": 9180,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "пункт выдачи",
+   "days": 2
+  }
+ },
+ {
+  "_id": "o-0034",
+  "number": "2026-0034",
+  "customer_id": "c-009",
+  "created": {
+   "$date": "2026-07-07T12:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PR-012",
+    "title": "Монитор Dell P2422H",
+    "category": "периферия",
+    "qty": 2,
+    "price": 21990
+   },
+   {
+    "sku": "SKU-CP-015",
+    "title": "SSD Samsung 980 1 ТБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 7890
+   },
+   {
+    "sku": "SKU-NB-002",
+    "title": "Ноутбук ASUS VivoBook 15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 51490
+   },
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 18990
+   }
+  ],
+  "total": 122350,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "курьер",
+   "days": 5
+  }
+ },
+ {
+  "_id": "o-0035",
+  "number": "2026-0035",
+  "customer_id": "c-001",
+  "created": {
+   "$date": "2026-06-27T20:45:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-NB-003",
+    "title": "Ноутбук HP Pavilion 14",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 67900
+   }
+  ],
+  "total": 67900,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 7
+  },
+  "promo": "FIRST5"
+ },
+ {
+  "_id": "o-0036",
+  "number": "2026-0036",
+  "customer_id": "c-007",
+  "created": {
+   "$date": "2026-03-10T14:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PR-011",
+    "title": "Мышь Logitech MX Master 3S",
+    "category": "периферия",
+    "qty": 1,
+    "price": 9490
+   },
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 3,
+    "price": 114990
+   }
+  ],
+  "total": 354460,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0037",
+  "number": "2026-0037",
+  "customer_id": "c-019",
+  "created": {
+   "$date": "2026-08-04T22:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-017",
+    "title": "Видеокарта NVIDIA RTX 4060",
+    "category": "комплектующие",
+    "qty": 2,
+    "price": 38990
+   },
+   {
+    "sku": "SKU-NB-001",
+    "title": "Ноутбук Lenovo IdeaPad 3",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 42990
+   },
+   {
+    "sku": "SKU-PR-010",
+    "title": "Клавиатура Keychron K2",
+    "category": "периферия",
+    "qty": 2,
+    "price": 8990
+   }
+  ],
+  "total": 138950,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "курьер",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0038",
+  "number": "2026-0038",
+  "customer_id": "c-015",
+  "created": {
+   "$date": "2026-06-06T08:15:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 2,
+    "price": 114990
+   },
+   {
+    "sku": "SKU-PR-013",
+    "title": "Наушники Sony WH-1000XM5",
+    "category": "периферия",
+    "qty": 3,
+    "price": 34990
+   },
+   {
+    "sku": "SKU-CP-018",
+    "title": "Блок питания be quiet! 650 Вт",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 8490
+   }
+  ],
+  "total": 343440,
+  "payment": {
+   "method": "картой при получении",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 7
+  }
+ },
+ {
+  "_id": "o-0039",
+  "number": "2026-0039",
+  "customer_id": "c-017",
+  "created": {
+   "$date": "2026-08-27T12:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-005",
+    "title": "Ноутбук Acer Nitro V15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 89990
+   },
+   {
+    "sku": "SKU-CP-018",
+    "title": "Блок питания be quiet! 650 Вт",
+    "category": "комплектующие",
+    "qty": 2,
+    "price": 8490
+   }
+  ],
+  "total": 106970,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "пункт выдачи",
+   "days": 2
+  }
+ },
+ {
+  "_id": "o-0040",
+  "number": "2026-0040",
+  "customer_id": "c-005",
+  "created": {
+   "$date": "2026-07-20T21:15:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-001",
+    "title": "Ноутбук Lenovo IdeaPad 3",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 42990
+   },
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 2,
+    "price": 6790
+   },
+   {
+    "sku": "SKU-CP-015",
+    "title": "SSD Samsung 980 1 ТБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 7890
+   },
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 18990
+   }
+  ],
+  "total": 121430,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "пункт выдачи",
+   "days": 9
+  }
+ },
+ {
+  "_id": "o-0041",
+  "number": "2026-0041",
+  "customer_id": "c-018",
+  "created": {
+   "$date": "2026-08-14T13:00:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-CP-018",
+    "title": "Блок питания be quiet! 650 Вт",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 8490
+   },
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 1,
+    "price": 6790
+   }
+  ],
+  "total": 15280,
+  "payment": {
+   "method": "карта",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "курьер",
+   "days": 5
+  }
+ },
+ {
+  "_id": "o-0042",
+  "number": "2026-0042",
+  "customer_id": "c-003",
+  "created": {
+   "$date": "2026-05-27T10:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-005",
+    "title": "Ноутбук Acer Nitro V15",
+    "category": "ноутбуки",
+    "qty": 2,
+    "price": 89990
+   }
+  ],
+  "total": 179980,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 6
+  },
+  "promo": "FIRST5"
+ },
+ {
+  "_id": "o-0043",
+  "number": "2026-0043",
+  "customer_id": "c-011",
+  "created": {
+   "$date": "2026-04-01T13:00:00.000Z"
+  },
+  "status": "в пути",
+  "items": [
+   {
+    "sku": "SKU-CP-015",
+    "title": "SSD Samsung 980 1 ТБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 7890
+   },
+   {
+    "sku": "SKU-PR-011",
+    "title": "Мышь Logitech MX Master 3S",
+    "category": "периферия",
+    "qty": 1,
+    "price": 9490
+   },
+   {
+    "sku": "SKU-CP-017",
+    "title": "Видеокарта NVIDIA RTX 4060",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 38990
+   }
+  ],
+  "total": 56370,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0044",
+  "number": "2026-0044",
+  "customer_id": "c-003",
+  "created": {
+   "$date": "2026-08-15T22:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PH-007",
+    "title": "Смартфон Samsung Galaxy A55",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 32990
+   },
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 2,
+    "price": 79990
+   }
+  ],
+  "total": 192970,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "курьер",
+   "days": 9
+  }
+ },
+ {
+  "_id": "o-0045",
+  "number": "2026-0045",
+  "customer_id": "c-004",
+  "created": {
+   "$date": "2026-05-26T22:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-002",
+    "title": "Ноутбук ASUS VivoBook 15",
+    "category": "ноутбуки",
+    "qty": 3,
+    "price": 51490
+   }
+  ],
+  "total": 154470,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "курьер",
+   "days": 9
+  }
+ },
+ {
+  "_id": "o-0046",
+  "number": "2026-0046",
+  "customer_id": "c-016",
+  "created": {
+   "$date": "2026-06-20T21:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-AC-019",
+    "title": "Рюкзак для ноутбука Xiaomi",
+    "category": "аксессуары",
+    "qty": 3,
+    "price": 2990
+   },
+   {
+    "sku": "SKU-CP-016",
+    "title": "Оперативная память Kingston 16 ГБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 4590
+   }
+  ],
+  "total": 13560,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "почта",
+   "days": 3
+  }
+ },
+ {
+  "_id": "o-0047",
+  "number": "2026-0047",
+  "customer_id": "c-006",
+  "created": {
+   "$date": "2026-04-01T13:45:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-CP-016",
+    "title": "Оперативная память Kingston 16 ГБ",
+    "category": "комплектующие",
+    "qty": 3,
+    "price": 4590
+   }
+  ],
+  "total": 13770,
+  "payment": {
+   "method": "карта",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0048",
+  "number": "2026-0048",
+  "customer_id": "c-018",
+  "created": {
+   "$date": "2026-08-12T21:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PR-010",
+    "title": "Клавиатура Keychron K2",
+    "category": "периферия",
+    "qty": 2,
+    "price": 8990
+   },
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 18990
+   }
+  ],
+  "total": 36970,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "почта",
+   "days": 2
+  }
+ },
+ {
+  "_id": "o-0049",
+  "number": "2026-0049",
+  "customer_id": "c-019",
+  "created": {
+   "$date": "2026-07-02T13:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 114990
+   },
+   {
+    "sku": "SKU-PR-012",
+    "title": "Монитор Dell P2422H",
+    "category": "периферия",
+    "qty": 1,
+    "price": 21990
+   },
+   {
+    "sku": "SKU-AC-021",
+    "title": "Powerbank Anker 20000 мА·ч",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 4290
+   },
+   {
+    "sku": "SKU-NB-005",
+    "title": "Ноутбук Acer Nitro V15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 89990
+   }
+  ],
+  "total": 231260,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "пункт выдачи",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0050",
+  "number": "2026-0050",
+  "customer_id": "c-010",
+  "created": {
+   "$date": "2026-03-11T18:45:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 1,
+    "price": 6790
+   },
+   {
+    "sku": "SKU-CP-015",
+    "title": "SSD Samsung 980 1 ТБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 7890
+   }
+  ],
+  "total": 14680,
+  "payment": {
+   "method": "карта",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "пункт выдачи",
+   "days": 8
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0051",
+  "number": "2026-0051",
+  "customer_id": "c-011",
+  "created": {
+   "$date": "2026-08-22T09:45:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-NB-003",
+    "title": "Ноутбук HP Pavilion 14",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 67900
+   },
+   {
+    "sku": "SKU-PR-012",
+    "title": "Монитор Dell P2422H",
+    "category": "периферия",
+    "qty": 1,
+    "price": 21990
+   },
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 2,
+    "price": 79990
+   },
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 18990
+   }
+  ],
+  "total": 268860,
+  "payment": {
+   "method": "карта",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "почта",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0052",
+  "number": "2026-0052",
+  "customer_id": "c-009",
+  "created": {
+   "$date": "2026-06-12T13:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 3,
+    "price": 114990
+   }
+  ],
+  "total": 344970,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "пункт выдачи",
+   "days": 8
+  }
+ },
+ {
+  "_id": "o-0053",
+  "number": "2026-0053",
+  "customer_id": "c-005",
+  "created": {
+   "$date": "2026-08-07T15:30:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-CP-016",
+    "title": "Оперативная память Kingston 16 ГБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 4590
+   },
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 3,
+    "price": 6790
+   },
+   {
+    "sku": "SKU-NB-001",
+    "title": "Ноутбук Lenovo IdeaPad 3",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 42990
+   }
+  ],
+  "total": 67950,
+  "payment": {
+   "method": "карта",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "курьер",
+   "days": 2
+  }
+ },
+ {
+  "_id": "o-0054",
+  "number": "2026-0054",
+  "customer_id": "c-012",
+  "created": {
+   "$date": "2026-08-28T19:15:00.000Z"
+  },
+  "status": "в пути",
+  "items": [
+   {
+    "sku": "SKU-PR-013",
+    "title": "Наушники Sony WH-1000XM5",
+    "category": "периферия",
+    "qty": 1,
+    "price": 34990
+   },
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 3,
+    "price": 6790
+   }
+  ],
+  "total": 55360,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "почта",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0055",
+  "number": "2026-0055",
+  "customer_id": "c-001",
+  "created": {
+   "$date": "2026-08-10T20:45:00.000Z"
+  },
+  "status": "в пути",
+  "items": [
+   {
+    "sku": "SKU-PH-007",
+    "title": "Смартфон Samsung Galaxy A55",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 32990
+   }
+  ],
+  "total": 98970,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 3
+  },
+  "promo": "FIRST5"
+ },
+ {
+  "_id": "o-0056",
+  "number": "2026-0056",
+  "customer_id": "c-007",
+  "created": {
+   "$date": "2026-03-28T08:45:00.000Z"
+  },
+  "status": "в пути",
+  "items": [
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 1,
+    "price": 6790
+   }
+  ],
+  "total": 6790,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0057",
+  "number": "2026-0057",
+  "customer_id": "c-008",
+  "created": {
+   "$date": "2026-08-07T19:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-018",
+    "title": "Блок питания be quiet! 650 Вт",
+    "category": "комплектующие",
+    "qty": 2,
+    "price": 8490
+   },
+   {
+    "sku": "SKU-NB-001",
+    "title": "Ноутбук Lenovo IdeaPad 3",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 42990
+   }
+  ],
+  "total": 59970,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0058",
+  "number": "2026-0058",
+  "customer_id": "c-015",
+  "created": {
+   "$date": "2026-07-22T15:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PH-007",
+    "title": "Смартфон Samsung Galaxy A55",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 32990
+   }
+  ],
+  "total": 32990,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 8
+  }
+ },
+ {
+  "_id": "o-0059",
+  "number": "2026-0059",
+  "customer_id": "c-001",
+  "created": {
+   "$date": "2026-08-09T09:15:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 114990
+   },
+   {
+    "sku": "SKU-NB-002",
+    "title": "Ноутбук ASUS VivoBook 15",
+    "category": "ноутбуки",
+    "qty": 2,
+    "price": 51490
+   }
+  ],
+  "total": 217970,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "почта",
+   "days": 6
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0060",
+  "number": "2026-0060",
+  "customer_id": "c-018",
+  "created": {
+   "$date": "2026-08-18T13:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PR-011",
+    "title": "Мышь Logitech MX Master 3S",
+    "category": "периферия",
+    "qty": 3,
+    "price": 9490
+   },
+   {
+    "sku": "SKU-AC-019",
+    "title": "Рюкзак для ноутбука Xiaomi",
+    "category": "аксессуары",
+    "qty": 2,
+    "price": 2990
+   },
+   {
+    "sku": "SKU-NB-003",
+    "title": "Ноутбук HP Pavilion 14",
+    "category": "ноутбуки",
+    "qty": 2,
+    "price": 67900
+   },
+   {
+    "sku": "SKU-NB-001",
+    "title": "Ноутбук Lenovo IdeaPad 3",
+    "category": "ноутбуки",
+    "qty": 2,
+    "price": 42990
+   }
+  ],
+  "total": 256230,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "почта",
+   "days": 9
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0061",
+  "number": "2026-0061",
+  "customer_id": "c-013",
+  "created": {
+   "$date": "2026-04-20T12:45:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 3,
+    "price": 114990
+   },
+   {
+    "sku": "SKU-PH-009",
+    "title": "Смартфон realme 12 Pro",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 27490
+   }
+  ],
+  "total": 372460,
+  "payment": {
+   "method": "карта",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "пункт выдачи",
+   "days": 7
+  },
+  "promo": "LOYAL15"
+ },
+ {
+  "_id": "o-0062",
+  "number": "2026-0062",
+  "customer_id": "c-011",
+  "created": {
+   "$date": "2026-03-03T11:15:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 1,
+    "price": 6790
+   }
+  ],
+  "total": 6790,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "почта",
+   "days": 5
+  }
+ },
+ {
+  "_id": "o-0063",
+  "number": "2026-0063",
+  "customer_id": "c-019",
+  "created": {
+   "$date": "2026-08-13T08:30:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 18990
+   },
+   {
+    "sku": "SKU-PR-011",
+    "title": "Мышь Logitech MX Master 3S",
+    "category": "периферия",
+    "qty": 1,
+    "price": 9490
+   },
+   {
+    "sku": "SKU-CP-017",
+    "title": "Видеокарта NVIDIA RTX 4060",
+    "category": "комплектующие",
+    "qty": 3,
+    "price": 38990
+   },
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 2,
+    "price": 114990
+   }
+  ],
+  "total": 413410,
+  "payment": {
+   "method": "СБП",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "пункт выдачи",
+   "days": 9
+  }
+ },
+ {
+  "_id": "o-0064",
+  "number": "2026-0064",
+  "customer_id": "c-007",
+  "created": {
+   "$date": "2026-06-17T11:15:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 79990
+   }
+  ],
+  "total": 79990,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 8
+  },
+  "promo": "LOYAL15"
+ },
+ {
+  "_id": "o-0065",
+  "number": "2026-0065",
+  "customer_id": "c-013",
+  "created": {
+   "$date": "2026-04-28T12:45:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-CP-017",
+    "title": "Видеокарта NVIDIA RTX 4060",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 38990
+   }
+  ],
+  "total": 38990,
+  "payment": {
+   "method": "картой при получении",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "почта",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0066",
+  "number": "2026-0066",
+  "customer_id": "c-008",
+  "created": {
+   "$date": "2026-06-26T16:30:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-NB-005",
+    "title": "Ноутбук Acer Nitro V15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 89990
+   },
+   {
+    "sku": "SKU-NB-001",
+    "title": "Ноутбук Lenovo IdeaPad 3",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 42990
+   },
+   {
+    "sku": "SKU-PR-010",
+    "title": "Клавиатура Keychron K2",
+    "category": "периферия",
+    "qty": 1,
+    "price": 8990
+   }
+  ],
+  "total": 141970,
+  "payment": {
+   "method": "СБП",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 9
+  }
+ },
+ {
+  "_id": "o-0067",
+  "number": "2026-0067",
+  "customer_id": "c-014",
+  "created": {
+   "$date": "2026-05-12T22:15:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 2,
+    "price": 114990
+   },
+   {
+    "sku": "SKU-CP-015",
+    "title": "SSD Samsung 980 1 ТБ",
+    "category": "комплектующие",
+    "qty": 3,
+    "price": 7890
+   }
+  ],
+  "total": 253650,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "почта",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0068",
+  "number": "2026-0068",
+  "customer_id": "c-003",
+  "created": {
+   "$date": "2026-08-09T08:15:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-AC-020",
+    "title": "Кабель USB-C 2 м",
+    "category": "аксессуары",
+    "qty": 3,
+    "price": 790
+   }
+  ],
+  "total": 2370,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "курьер",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0069",
+  "number": "2026-0069",
+  "customer_id": "c-005",
+  "created": {
+   "$date": "2026-03-25T20:30:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 1,
+    "price": 6790
+   }
+  ],
+  "total": 6790,
+  "payment": {
+   "method": "СБП",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "почта",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0070",
+  "number": "2026-0070",
+  "customer_id": "c-010",
+  "created": {
+   "$date": "2026-08-27T09:30:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 114990
+   }
+  ],
+  "total": 114990,
+  "payment": {
+   "method": "карта",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "курьер",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0071",
+  "number": "2026-0071",
+  "customer_id": "c-017",
+  "created": {
+   "$date": "2026-07-05T12:45:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 79990
+   },
+   {
+    "sku": "SKU-CP-017",
+    "title": "Видеокарта NVIDIA RTX 4060",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 38990
+   },
+   {
+    "sku": "SKU-AC-020",
+    "title": "Кабель USB-C 2 м",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 790
+   }
+  ],
+  "total": 119770,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "пункт выдачи",
+   "days": 5
+  }
+ },
+ {
+  "_id": "o-0072",
+  "number": "2026-0072",
+  "customer_id": "c-006",
+  "created": {
+   "$date": "2026-05-30T22:00:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-NB-005",
+    "title": "Ноутбук Acer Nitro V15",
+    "category": "ноутбуки",
+    "qty": 2,
+    "price": 89990
+   },
+   {
+    "sku": "SKU-PR-011",
+    "title": "Мышь Logitech MX Master 3S",
+    "category": "периферия",
+    "qty": 1,
+    "price": 9490
+   }
+  ],
+  "total": 189470,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "почта",
+   "days": 7
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0073",
+  "number": "2026-0073",
+  "customer_id": "c-002",
+  "created": {
+   "$date": "2026-07-29T18:15:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-AC-019",
+    "title": "Рюкзак для ноутбука Xiaomi",
+    "category": "аксессуары",
+    "qty": 2,
+    "price": 2990
+   }
+  ],
+  "total": 5980,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 7
+  }
+ },
+ {
+  "_id": "o-0074",
+  "number": "2026-0074",
+  "customer_id": "c-015",
+  "created": {
+   "$date": "2026-07-25T21:00:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-PH-009",
+    "title": "Смартфон realme 12 Pro",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 27490
+   },
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 18990
+   },
+   {
+    "sku": "SKU-PH-007",
+    "title": "Смартфон Samsung Galaxy A55",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 32990
+   },
+   {
+    "sku": "SKU-CP-016",
+    "title": "Оперативная память Kingston 16 ГБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 4590
+   }
+  ],
+  "total": 243000,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "курьер",
+   "days": 6
+  },
+  "promo": "LOYAL15"
+ },
+ {
+  "_id": "o-0075",
+  "number": "2026-0075",
+  "customer_id": "c-014",
+  "created": {
+   "$date": "2026-04-10T13:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-002",
+    "title": "Ноутбук ASUS VivoBook 15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 51490
+   }
+  ],
+  "total": 51490,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 4
+  },
+  "promo": "FIRST5"
+ },
+ {
+  "_id": "o-0076",
+  "number": "2026-0076",
+  "customer_id": "c-011",
+  "created": {
+   "$date": "2026-04-21T18:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-017",
+    "title": "Видеокарта NVIDIA RTX 4060",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 38990
+   }
+  ],
+  "total": 38990,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0077",
+  "number": "2026-0077",
+  "customer_id": "c-017",
+  "created": {
+   "$date": "2026-06-10T18:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-016",
+    "title": "Оперативная память Kingston 16 ГБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 4590
+   },
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 2,
+    "price": 6790
+   }
+  ],
+  "total": 18170,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "курьер",
+   "days": 3
+  }
+ },
+ {
+  "_id": "o-0078",
+  "number": "2026-0078",
+  "customer_id": "c-010",
+  "created": {
+   "$date": "2026-08-04T11:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-018",
+    "title": "Блок питания be quiet! 650 Вт",
+    "category": "комплектующие",
+    "qty": 2,
+    "price": 8490
+   }
+  ],
+  "total": 16980,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "пункт выдачи",
+   "days": 1
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0079",
+  "number": "2026-0079",
+  "customer_id": "c-010",
+  "created": {
+   "$date": "2026-05-28T13:15:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PR-011",
+    "title": "Мышь Logitech MX Master 3S",
+    "category": "периферия",
+    "qty": 1,
+    "price": 9490
+   },
+   {
+    "sku": "SKU-AC-021",
+    "title": "Powerbank Anker 20000 мА·ч",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 4290
+   },
+   {
+    "sku": "SKU-NB-002",
+    "title": "Ноутбук ASUS VivoBook 15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 51490
+   },
+   {
+    "sku": "SKU-NB-001",
+    "title": "Ноутбук Lenovo IdeaPad 3",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 42990
+   }
+  ],
+  "total": 108260,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "пункт выдачи",
+   "days": 6
+  }
+ },
+ {
+  "_id": "o-0080",
+  "number": "2026-0080",
+  "customer_id": "c-016",
+  "created": {
+   "$date": "2026-04-29T15:15:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PR-010",
+    "title": "Клавиатура Keychron K2",
+    "category": "периферия",
+    "qty": 3,
+    "price": 8990
+   },
+   {
+    "sku": "SKU-AC-019",
+    "title": "Рюкзак для ноутбука Xiaomi",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 2990
+   },
+   {
+    "sku": "SKU-PR-011",
+    "title": "Мышь Logitech MX Master 3S",
+    "category": "периферия",
+    "qty": 2,
+    "price": 9490
+   },
+   {
+    "sku": "SKU-AC-020",
+    "title": "Кабель USB-C 2 м",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 790
+   }
+  ],
+  "total": 49730,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "курьер",
+   "days": 9
+  }
+ },
+ {
+  "_id": "o-0081",
+  "number": "2026-0081",
+  "customer_id": "c-018",
+  "created": {
+   "$date": "2026-06-07T11:30:00.000Z"
+  },
+  "status": "в пути",
+  "items": [
+   {
+    "sku": "SKU-PH-009",
+    "title": "Смартфон realme 12 Pro",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 27490
+   },
+   {
+    "sku": "SKU-NB-001",
+    "title": "Ноутбук Lenovo IdeaPad 3",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 42990
+   },
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 79990
+   }
+  ],
+  "total": 150470,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "почта",
+   "days": 3
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0082",
+  "number": "2026-0082",
+  "customer_id": "c-006",
+  "created": {
+   "$date": "2026-08-19T08:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-AC-019",
+    "title": "Рюкзак для ноутбука Xiaomi",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 2990
+   },
+   {
+    "sku": "SKU-CP-017",
+    "title": "Видеокарта NVIDIA RTX 4060",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 38990
+   }
+  ],
+  "total": 41980,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 3
+  },
+  "promo": "LOYAL15"
+ },
+ {
+  "_id": "o-0083",
+  "number": "2026-0083",
+  "customer_id": "c-003",
+  "created": {
+   "$date": "2026-08-21T21:45:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-AC-019",
+    "title": "Рюкзак для ноутбука Xiaomi",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 2990
+   }
+  ],
+  "total": 2990,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "почта",
+   "days": 8
+  },
+  "promo": "LOYAL15"
+ },
+ {
+  "_id": "o-0084",
+  "number": "2026-0084",
+  "customer_id": "c-005",
+  "created": {
+   "$date": "2026-05-08T17:15:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-CP-016",
+    "title": "Оперативная память Kingston 16 ГБ",
+    "category": "комплектующие",
+    "qty": 2,
+    "price": 4590
+   },
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 18990
+   },
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 114990
+   },
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 79990
+   }
+  ],
+  "total": 223150,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "почта",
+   "days": 4
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0085",
+  "number": "2026-0085",
+  "customer_id": "c-007",
+  "created": {
+   "$date": "2026-03-23T08:15:00.000Z"
+  },
+  "status": "в пути",
+  "items": [
+   {
+    "sku": "SKU-PH-009",
+    "title": "Смартфон realme 12 Pro",
+    "category": "смартфоны",
+    "qty": 2,
+    "price": 27490
+   },
+   {
+    "sku": "SKU-NB-005",
+    "title": "Ноутбук Acer Nitro V15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 89990
+   },
+   {
+    "sku": "SKU-AC-020",
+    "title": "Кабель USB-C 2 м",
+    "category": "аксессуары",
+    "qty": 3,
+    "price": 790
+   },
+   {
+    "sku": "SKU-CP-017",
+    "title": "Видеокарта NVIDIA RTX 4060",
+    "category": "комплектующие",
+    "qty": 2,
+    "price": 38990
+   }
+  ],
+  "total": 225320,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "почта",
+   "days": 9
+  }
+ },
+ {
+  "_id": "o-0086",
+  "number": "2026-0086",
+  "customer_id": "c-001",
+  "created": {
+   "$date": "2026-03-26T15:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 1,
+    "price": 6790
+   },
+   {
+    "sku": "SKU-NB-002",
+    "title": "Ноутбук ASUS VivoBook 15",
+    "category": "ноутбуки",
+    "qty": 2,
+    "price": 51490
+   },
+   {
+    "sku": "SKU-PH-009",
+    "title": "Смартфон realme 12 Pro",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 27490
+   }
+  ],
+  "total": 192240,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 4
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0087",
+  "number": "2026-0087",
+  "customer_id": "c-018",
+  "created": {
+   "$date": "2026-08-02T21:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 114990
+   }
+  ],
+  "total": 114990,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "пункт выдачи",
+   "days": 5
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0088",
+  "number": "2026-0088",
+  "customer_id": "c-004",
+  "created": {
+   "$date": "2026-08-26T18:30:00.000Z"
+  },
+  "status": "в пути",
+  "items": [
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 114990
+   },
+   {
+    "sku": "SKU-CP-016",
+    "title": "Оперативная память Kingston 16 ГБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 4590
+   },
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 1,
+    "price": 6790
+   }
+  ],
+  "total": 126370,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "почта",
+   "days": 2
+  },
+  "promo": "LOYAL15"
+ },
+ {
+  "_id": "o-0089",
+  "number": "2026-0089",
+  "customer_id": "c-012",
+  "created": {
+   "$date": "2026-07-08T17:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PH-007",
+    "title": "Смартфон Samsung Galaxy A55",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 32990
+   },
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 1,
+    "price": 6790
+   }
+  ],
+  "total": 39780,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "пункт выдачи",
+   "days": 7
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0090",
+  "number": "2026-0090",
+  "customer_id": "c-009",
+  "created": {
+   "$date": "2026-07-12T13:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PH-009",
+    "title": "Смартфон realme 12 Pro",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 27490
+   },
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 79990
+   }
+  ],
+  "total": 267460,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "пункт выдачи",
+   "days": 2
+  }
+ },
+ {
+  "_id": "o-0091",
+  "number": "2026-0091",
+  "customer_id": "c-006",
+  "created": {
+   "$date": "2026-03-22T09:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 114990
+   },
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 79990
+   }
+  ],
+  "total": 354960,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0092",
+  "number": "2026-0092",
+  "customer_id": "c-020",
+  "created": {
+   "$date": "2026-06-19T21:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-005",
+    "title": "Ноутбук Acer Nitro V15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 89990
+   }
+  ],
+  "total": 89990,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "курьер",
+   "days": 7
+  }
+ },
+ {
+  "_id": "o-0093",
+  "number": "2026-0093",
+  "customer_id": "c-006",
+  "created": {
+   "$date": "2026-08-10T13:15:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-AC-021",
+    "title": "Powerbank Anker 20000 мА·ч",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 4290
+   }
+  ],
+  "total": 4290,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 5
+  }
+ },
+ {
+  "_id": "o-0094",
+  "number": "2026-0094",
+  "customer_id": "c-014",
+  "created": {
+   "$date": "2026-07-19T12:30:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 2,
+    "price": 79990
+   },
+   {
+    "sku": "SKU-PR-013",
+    "title": "Наушники Sony WH-1000XM5",
+    "category": "периферия",
+    "qty": 1,
+    "price": 34990
+   },
+   {
+    "sku": "SKU-PR-010",
+    "title": "Клавиатура Keychron K2",
+    "category": "периферия",
+    "qty": 1,
+    "price": 8990
+   },
+   {
+    "sku": "SKU-NB-002",
+    "title": "Ноутбук ASUS VivoBook 15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 51490
+   }
+  ],
+  "total": 255450,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 6
+  }
+ },
+ {
+  "_id": "o-0095",
+  "number": "2026-0095",
+  "customer_id": "c-007",
+  "created": {
+   "$date": "2026-05-04T15:00:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-PR-011",
+    "title": "Мышь Logitech MX Master 3S",
+    "category": "периферия",
+    "qty": 1,
+    "price": 9490
+   }
+  ],
+  "total": 9490,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 5
+  }
+ },
+ {
+  "_id": "o-0096",
+  "number": "2026-0096",
+  "customer_id": "c-015",
+  "created": {
+   "$date": "2026-06-06T08:15:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 79990
+   }
+  ],
+  "total": 79990,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 7
+  }
+ },
+ {
+  "_id": "o-0097",
+  "number": "2026-0097",
+  "customer_id": "c-018",
+  "created": {
+   "$date": "2026-03-26T19:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PH-007",
+    "title": "Смартфон Samsung Galaxy A55",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 32990
+   },
+   {
+    "sku": "SKU-CP-015",
+    "title": "SSD Samsung 980 1 ТБ",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 7890
+   },
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 2,
+    "price": 79990
+   },
+   {
+    "sku": "SKU-AC-021",
+    "title": "Powerbank Anker 20000 мА·ч",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 4290
+   }
+  ],
+  "total": 205150,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "пункт выдачи",
+   "days": 5
+  }
+ },
+ {
+  "_id": "o-0098",
+  "number": "2026-0098",
+  "customer_id": "c-017",
+  "created": {
+   "$date": "2026-07-16T09:15:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-AC-019",
+    "title": "Рюкзак для ноутбука Xiaomi",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 2990
+   },
+   {
+    "sku": "SKU-PR-013",
+    "title": "Наушники Sony WH-1000XM5",
+    "category": "периферия",
+    "qty": 3,
+    "price": 34990
+   },
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 79990
+   }
+  ],
+  "total": 187950,
+  "payment": {
+   "method": "карта",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "почта",
+   "days": 2
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0099",
+  "number": "2026-0099",
+  "customer_id": "c-002",
+  "created": {
+   "$date": "2026-06-15T16:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-015",
+    "title": "SSD Samsung 980 1 ТБ",
+    "category": "комплектующие",
+    "qty": 3,
+    "price": 7890
+   }
+  ],
+  "total": 23670,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 4
+  },
+  "promo": "FIRST5"
+ },
+ {
+  "_id": "o-0100",
+  "number": "2026-0100",
+  "customer_id": "c-012",
+  "created": {
+   "$date": "2026-08-19T13:00:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-PR-013",
+    "title": "Наушники Sony WH-1000XM5",
+    "category": "периферия",
+    "qty": 1,
+    "price": 34990
+   },
+   {
+    "sku": "SKU-NB-002",
+    "title": "Ноутбук ASUS VivoBook 15",
+    "category": "ноутбуки",
+    "qty": 3,
+    "price": 51490
+   }
+  ],
+  "total": 189460,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "курьер",
+   "days": 8
+  }
+ },
+ {
+  "_id": "o-0101",
+  "number": "2026-0101",
+  "customer_id": "c-016",
+  "created": {
+   "$date": "2026-08-15T14:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 114990
+   }
+  ],
+  "total": 114990,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "пункт выдачи",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0102",
+  "number": "2026-0102",
+  "customer_id": "c-019",
+  "created": {
+   "$date": "2026-05-11T10:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 2,
+    "price": 18990
+   },
+   {
+    "sku": "SKU-CP-015",
+    "title": "SSD Samsung 980 1 ТБ",
+    "category": "комплектующие",
+    "qty": 3,
+    "price": 7890
+   }
+  ],
+  "total": 61650,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "пункт выдачи",
+   "days": 9
+  },
+  "promo": "LOYAL15"
+ },
+ {
+  "_id": "o-0103",
+  "number": "2026-0103",
+  "customer_id": "c-016",
+  "created": {
+   "$date": "2026-08-03T13:30:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-NB-003",
+    "title": "Ноутбук HP Pavilion 14",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 67900
+   },
+   {
+    "sku": "SKU-AC-021",
+    "title": "Powerbank Anker 20000 мА·ч",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 4290
+   }
+  ],
+  "total": 72190,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "курьер",
+   "days": 5
+  },
+  "promo": "FIRST5"
+ },
+ {
+  "_id": "o-0104",
+  "number": "2026-0104",
+  "customer_id": "c-004",
+  "created": {
+   "$date": "2026-04-28T09:45:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-PH-007",
+    "title": "Смартфон Samsung Galaxy A55",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 32990
+   },
+   {
+    "sku": "SKU-NB-001",
+    "title": "Ноутбук Lenovo IdeaPad 3",
+    "category": "ноутбуки",
+    "qty": 2,
+    "price": 42990
+   },
+   {
+    "sku": "SKU-PR-012",
+    "title": "Монитор Dell P2422H",
+    "category": "периферия",
+    "qty": 1,
+    "price": 21990
+   }
+  ],
+  "total": 206940,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "курьер",
+   "days": 9
+  },
+  "promo": "FIRST5"
+ },
+ {
+  "_id": "o-0105",
+  "number": "2026-0105",
+  "customer_id": "c-002",
+  "created": {
+   "$date": "2026-06-24T20:15:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-PR-011",
+    "title": "Мышь Logitech MX Master 3S",
+    "category": "периферия",
+    "qty": 2,
+    "price": 9490
+   },
+   {
+    "sku": "SKU-CP-018",
+    "title": "Блок питания be quiet! 650 Вт",
+    "category": "комплектующие",
+    "qty": 3,
+    "price": 8490
+   },
+   {
+    "sku": "SKU-AC-021",
+    "title": "Powerbank Anker 20000 мА·ч",
+    "category": "аксессуары",
+    "qty": 3,
+    "price": 4290
+   }
+  ],
+  "total": 57320,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "курьер",
+   "days": 3
+  },
+  "promo": "FIRST5"
+ },
+ {
+  "_id": "o-0106",
+  "number": "2026-0106",
+  "customer_id": "c-013",
+  "created": {
+   "$date": "2026-04-17T11:30:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-NB-002",
+    "title": "Ноутбук ASUS VivoBook 15",
+    "category": "ноутбуки",
+    "qty": 3,
+    "price": 51490
+   }
+  ],
+  "total": 154470,
+  "payment": {
+   "method": "карта",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "курьер",
+   "days": 7
+  }
+ },
+ {
+  "_id": "o-0107",
+  "number": "2026-0107",
+  "customer_id": "c-003",
+  "created": {
+   "$date": "2026-08-02T08:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PR-012",
+    "title": "Монитор Dell P2422H",
+    "category": "периферия",
+    "qty": 3,
+    "price": 21990
+   },
+   {
+    "sku": "SKU-AC-021",
+    "title": "Powerbank Anker 20000 мА·ч",
+    "category": "аксессуары",
+    "qty": 2,
+    "price": 4290
+   }
+  ],
+  "total": 74550,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 5
+  }
+ },
+ {
+  "_id": "o-0108",
+  "number": "2026-0108",
+  "customer_id": "c-010",
+  "created": {
+   "$date": "2026-03-13T18:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-018",
+    "title": "Блок питания be quiet! 650 Вт",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 8490
+   },
+   {
+    "sku": "SKU-NB-003",
+    "title": "Ноутбук HP Pavilion 14",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 67900
+   }
+  ],
+  "total": 76390,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "пункт выдачи",
+   "days": 3
+  }
+ },
+ {
+  "_id": "o-0109",
+  "number": "2026-0109",
+  "customer_id": "c-010",
+  "created": {
+   "$date": "2026-04-12T10:15:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-NB-001",
+    "title": "Ноутбук Lenovo IdeaPad 3",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 42990
+   },
+   {
+    "sku": "SKU-CP-015",
+    "title": "SSD Samsung 980 1 ТБ",
+    "category": "комплектующие",
+    "qty": 2,
+    "price": 7890
+   },
+   {
+    "sku": "SKU-AC-019",
+    "title": "Рюкзак для ноутбука Xiaomi",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 2990
+   },
+   {
+    "sku": "SKU-PR-010",
+    "title": "Клавиатура Keychron K2",
+    "category": "периферия",
+    "qty": 1,
+    "price": 8990
+   }
+  ],
+  "total": 70750,
+  "payment": {
+   "method": "СБП",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Санкт-Петербург",
+   "type": "почта",
+   "days": 6
+  }
+ },
+ {
+  "_id": "o-0110",
+  "number": "2026-0110",
+  "customer_id": "c-013",
+  "created": {
+   "$date": "2026-08-17T16:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PH-007",
+    "title": "Смартфон Samsung Galaxy A55",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 32990
+   },
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 18990
+   },
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 79990
+   }
+  ],
+  "total": 235930,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "курьер",
+   "days": 9
+  }
+ },
+ {
+  "_id": "o-0111",
+  "number": "2026-0111",
+  "customer_id": "c-008",
+  "created": {
+   "$date": "2026-07-08T18:15:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PH-007",
+    "title": "Смартфон Samsung Galaxy A55",
+    "category": "смартфоны",
+    "qty": 2,
+    "price": 32990
+   },
+   {
+    "sku": "SKU-NB-004",
+    "title": "Ноутбук Apple MacBook Air 13",
+    "category": "ноутбуки",
+    "qty": 2,
+    "price": 114990
+   }
+  ],
+  "total": 295960,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "курьер",
+   "days": 9
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0112",
+  "number": "2026-0112",
+  "customer_id": "c-011",
+  "created": {
+   "$date": "2026-05-29T11:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PH-009",
+    "title": "Смартфон realme 12 Pro",
+    "category": "смартфоны",
+    "qty": 2,
+    "price": 27490
+   },
+   {
+    "sku": "SKU-CP-018",
+    "title": "Блок питания be quiet! 650 Вт",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 8490
+   }
+  ],
+  "total": 63470,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "пункт выдачи",
+   "days": 8
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0113",
+  "number": "2026-0113",
+  "customer_id": "c-015",
+  "created": {
+   "$date": "2026-07-20T17:00:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-PR-010",
+    "title": "Клавиатура Keychron K2",
+    "category": "периферия",
+    "qty": 2,
+    "price": 8990
+   },
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 18990
+   }
+  ],
+  "total": 36970,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "почта",
+   "days": 9
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0114",
+  "number": "2026-0114",
+  "customer_id": "c-004",
+  "created": {
+   "$date": "2026-07-09T15:30:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-PR-010",
+    "title": "Клавиатура Keychron K2",
+    "category": "периферия",
+    "qty": 1,
+    "price": 8990
+   },
+   {
+    "sku": "SKU-NB-001",
+    "title": "Ноутбук Lenovo IdeaPad 3",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 42990
+   }
+  ],
+  "total": 51980,
+  "payment": {
+   "method": "карта",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0115",
+  "number": "2026-0115",
+  "customer_id": "c-009",
+  "created": {
+   "$date": "2026-03-28T17:45:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-NB-003",
+    "title": "Ноутбук HP Pavilion 14",
+    "category": "ноутбуки",
+    "qty": 3,
+    "price": 67900
+   },
+   {
+    "sku": "SKU-PH-007",
+    "title": "Смартфон Samsung Galaxy A55",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 32990
+   },
+   {
+    "sku": "SKU-NB-005",
+    "title": "Ноутбук Acer Nitro V15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 89990
+   }
+  ],
+  "total": 392660,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "пункт выдачи",
+   "days": 5
+  }
+ },
+ {
+  "_id": "o-0116",
+  "number": "2026-0116",
+  "customer_id": "c-018",
+  "created": {
+   "$date": "2026-03-25T17:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-CP-018",
+    "title": "Блок питания be quiet! 650 Вт",
+    "category": "комплектующие",
+    "qty": 1,
+    "price": 8490
+   },
+   {
+    "sku": "SKU-PH-006",
+    "title": "Смартфон Xiaomi Redmi Note 13",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 18990
+   }
+  ],
+  "total": 27480,
+  "payment": {
+   "method": "СБП",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Ярославль",
+   "type": "пункт выдачи",
+   "days": 4
+  }
+ },
+ {
+  "_id": "o-0117",
+  "number": "2026-0117",
+  "customer_id": "c-007",
+  "created": {
+   "$date": "2026-03-19T11:30:00.000Z"
+  },
+  "status": "отменён",
+  "items": [
+   {
+    "sku": "SKU-PR-014",
+    "title": "Веб-камера Logitech C920",
+    "category": "периферия",
+    "qty": 1,
+    "price": 6790
+   }
+  ],
+  "total": 6790,
+  "payment": {
+   "method": "карта",
+   "paid": false
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 8
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0118",
+  "number": "2026-0118",
+  "customer_id": "c-016",
+  "created": {
+   "$date": "2026-07-08T14:30:00.000Z"
+  },
+  "status": "доставлен",
+  "items": [
+   {
+    "sku": "SKU-AC-020",
+    "title": "Кабель USB-C 2 м",
+    "category": "аксессуары",
+    "qty": 2,
+    "price": 790
+   },
+   {
+    "sku": "SKU-PH-009",
+    "title": "Смартфон realme 12 Pro",
+    "category": "смартфоны",
+    "qty": 1,
+    "price": 27490
+   },
+   {
+    "sku": "SKU-CP-016",
+    "title": "Оперативная память Kingston 16 ГБ",
+    "category": "комплектующие",
+    "qty": 3,
+    "price": 4590
+   }
+  ],
+  "total": 42840,
+  "payment": {
+   "method": "картой при получении",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Москва",
+   "type": "пункт выдачи",
+   "days": 8
+  },
+  "promo": "SPRING10"
+ },
+ {
+  "_id": "o-0119",
+  "number": "2026-0119",
+  "customer_id": "c-014",
+  "created": {
+   "$date": "2026-08-10T22:30:00.000Z"
+  },
+  "status": "в пути",
+  "items": [
+   {
+    "sku": "SKU-PR-012",
+    "title": "Монитор Dell P2422H",
+    "category": "периферия",
+    "qty": 1,
+    "price": 21990
+   },
+   {
+    "sku": "SKU-NB-005",
+    "title": "Ноутбук Acer Nitro V15",
+    "category": "ноутбуки",
+    "qty": 1,
+    "price": 89990
+   },
+   {
+    "sku": "SKU-AC-021",
+    "title": "Powerbank Anker 20000 мА·ч",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 4290
+   },
+   {
+    "sku": "SKU-PH-007",
+    "title": "Смартфон Samsung Galaxy A55",
+    "category": "смартфоны",
+    "qty": 2,
+    "price": 32990
+   }
+  ],
+  "total": 182250,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Новосибирск",
+   "type": "пункт выдачи",
+   "days": 1
+  }
+ },
+ {
+  "_id": "o-0120",
+  "number": "2026-0120",
+  "customer_id": "c-008",
+  "created": {
+   "$date": "2026-07-25T19:45:00.000Z"
+  },
+  "status": "собирается",
+  "items": [
+   {
+    "sku": "SKU-NB-005",
+    "title": "Ноутбук Acer Nitro V15",
+    "category": "ноутбуки",
+    "qty": 2,
+    "price": 89990
+   },
+   {
+    "sku": "SKU-AC-019",
+    "title": "Рюкзак для ноутбука Xiaomi",
+    "category": "аксессуары",
+    "qty": 1,
+    "price": 2990
+   },
+   {
+    "sku": "SKU-PR-013",
+    "title": "Наушники Sony WH-1000XM5",
+    "category": "периферия",
+    "qty": 1,
+    "price": 34990
+   },
+   {
+    "sku": "SKU-PH-008",
+    "title": "Смартфон Apple iPhone 15",
+    "category": "смартфоны",
+    "qty": 3,
+    "price": 79990
+   }
+  ],
+  "total": 457930,
+  "payment": {
+   "method": "карта",
+   "paid": true
+  },
+  "delivery": {
+   "city": "Екатеринбург",
+   "type": "курьер",
+   "days": 3
+  }
+ }
+]

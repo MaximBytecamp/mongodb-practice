@@ -1,0 +1,245 @@
+[
+ {
+  "_id": "s-001",
+  "name": "Ирина Соколова",
+  "position": "директор по продукту",
+  "manager_id": null,
+  "department": "продукт",
+  "salary": 420000,
+  "hired": {
+   "$date": "2023-05-28T00:00:00.000Z"
+  },
+  "skills": [
+   "PostgreSQL",
+   "Kafka",
+   "React",
+   "MongoDB"
+  ]
+ },
+ {
+  "_id": "s-002",
+  "name": "Павел Демин",
+  "position": "руководитель разработки",
+  "manager_id": "s-001",
+  "department": "разработка",
+  "salary": 380000,
+  "hired": {
+   "$date": "2024-01-01T00:00:00.000Z"
+  },
+  "skills": [
+   "PostgreSQL",
+   "Python"
+  ]
+ },
+ {
+  "_id": "s-003",
+  "name": "Наталья Гурьева",
+  "position": "руководитель аналитики",
+  "manager_id": "s-001",
+  "department": "аналитика",
+  "salary": 330000,
+  "hired": {
+   "$date": "2023-07-04T00:00:00.000Z"
+  },
+  "skills": [
+   "Python",
+   "Airflow",
+   "React",
+   "MongoDB"
+  ]
+ },
+ {
+  "_id": "s-004",
+  "name": "Алексей Ким",
+  "position": "тимлид backend",
+  "manager_id": "s-002",
+  "department": "разработка",
+  "salary": 300000,
+  "hired": {
+   "$date": "2024-06-15T00:00:00.000Z"
+  },
+  "skills": [
+   "Python",
+   "PostgreSQL",
+   "Airflow",
+   "SQL"
+  ]
+ },
+ {
+  "_id": "s-005",
+  "name": "Марина Власова",
+  "position": "тимлид frontend",
+  "manager_id": "s-002",
+  "department": "разработка",
+  "salary": 290000,
+  "hired": {
+   "$date": "2023-10-03T00:00:00.000Z"
+  },
+  "skills": [
+   "React",
+   "PostgreSQL",
+   "Python"
+  ]
+ },
+ {
+  "_id": "s-006",
+  "name": "Сергей Носов",
+  "position": "backend-разработчик",
+  "manager_id": "s-004",
+  "department": "разработка",
+  "salary": 240000,
+  "hired": {
+   "$date": "2024-10-21T00:00:00.000Z"
+  },
+  "skills": [
+   "Airflow",
+   "MongoDB"
+  ]
+ },
+ {
+  "_id": "s-007",
+  "name": "Дарья Белова",
+  "position": "backend-разработчик",
+  "manager_id": "s-004",
+  "department": "разработка",
+  "salary": 215000,
+  "hired": {
+   "$date": "2025-01-22T00:00:00.000Z"
+  },
+  "skills": [
+   "Python",
+   "Kafka",
+   "Docker",
+   "Airflow"
+  ]
+ },
+ {
+  "_id": "s-008",
+  "name": "Кирилл Юдин",
+  "position": "junior backend-разработчик",
+  "manager_id": "s-004",
+  "department": "разработка",
+  "salary": 120000,
+  "hired": {
+   "$date": "2023-04-01T00:00:00.000Z"
+  },
+  "skills": [
+   "PostgreSQL",
+   "Kafka",
+   "Airflow"
+  ]
+ },
+ {
+  "_id": "s-009",
+  "name": "Ольга Рябова",
+  "position": "frontend-разработчик",
+  "manager_id": "s-005",
+  "department": "разработка",
+  "salary": 230000,
+  "hired": {
+   "$date": "2023-03-30T00:00:00.000Z"
+  },
+  "skills": [
+   "Airflow",
+   "SQL",
+   "Docker",
+   "PostgreSQL"
+  ]
+ },
+ {
+  "_id": "s-010",
+  "name": "Тимур Ахметов",
+  "position": "frontend-разработчик",
+  "manager_id": "s-005",
+  "department": "разработка",
+  "salary": 205000,
+  "hired": {
+   "$date": "2025-01-29T00:00:00.000Z"
+  },
+  "skills": [
+   "PostgreSQL",
+   "Kafka",
+   "SQL"
+  ]
+ },
+ {
+  "_id": "s-011",
+  "name": "Егор Мельник",
+  "position": "аналитик данных",
+  "manager_id": "s-003",
+  "department": "аналитика",
+  "salary": 210000,
+  "hired": {
+   "$date": "2024-08-08T00:00:00.000Z"
+  },
+  "skills": [
+   "MongoDB",
+   "PostgreSQL",
+   "React",
+   "SQL"
+  ]
+ },
+ {
+  "_id": "s-012",
+  "name": "Вера Панина",
+  "position": "аналитик данных",
+  "manager_id": "s-003",
+  "department": "аналитика",
+  "salary": 195000,
+  "hired": {
+   "$date": "2025-02-03T00:00:00.000Z"
+  },
+  "skills": [
+   "PostgreSQL",
+   "Kafka",
+   "Python",
+   "SQL"
+  ]
+ },
+ {
+  "_id": "s-013",
+  "name": "Роман Ильин",
+  "position": "junior аналитик",
+  "manager_id": "s-011",
+  "department": "аналитика",
+  "salary": 110000,
+  "hired": {
+   "$date": "2024-10-22T00:00:00.000Z"
+  },
+  "skills": [
+   "Docker",
+   "Python"
+  ]
+ },
+ {
+  "_id": "s-014",
+  "name": "Юлия Ефимова",
+  "position": "QA-инженер",
+  "manager_id": "s-002",
+  "department": "разработка",
+  "salary": 180000,
+  "hired": {
+   "$date": "2025-03-18T00:00:00.000Z"
+  },
+  "skills": [
+   "PostgreSQL",
+   "Python"
+  ]
+ },
+ {
+  "_id": "s-015",
+  "name": "Максим Седов",
+  "position": "DevOps-инженер",
+  "manager_id": "s-002",
+  "department": "инфраструктура",
+  "salary": 310000,
+  "hired": {
+   "$date": "2023-02-22T00:00:00.000Z"
+  },
+  "skills": [
+   "Python",
+   "Airflow",
+   "Docker"
+  ]
+ }
+]

@@ -1,0 +1,20 @@
+# Учебный сервер MongoDB. Поднимается одной командой:
+#   docker compose up -d
+# Полный сброс вместе с данными:
+#   docker compose down -v
+services:
+  mongo:
+    image: mongo:7                 # одна версия у всей группы
+    container_name: course-mongo
+    ports:
+      - "27017:27017"              # порт наружу = порт внутри
+    volumes:
+      - mongo-data:/data/db        # данные переживают перезапуск
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  mongo-data:

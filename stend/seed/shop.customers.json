@@ -1,0 +1,222 @@
+[
+ {
+  "_id": "c-001",
+  "name": "Анна Белова",
+  "email": "user01@example.com",
+  "city": "Новосибирск",
+  "registered": {
+   "$date": "2026-03-13T00:00:00.000Z"
+  },
+  "segment": "постоянный",
+  "phone": "+7 958 256-50-40"
+ },
+ {
+  "_id": "c-002",
+  "name": "Игорь Титов",
+  "email": "user02@example.com",
+  "city": "Екатеринбург",
+  "registered": {
+   "$date": "2025-06-05T00:00:00.000Z"
+  },
+  "segment": "vip",
+  "phone": "+7 979 132-60-25"
+ },
+ {
+  "_id": "c-003",
+  "name": "Мария Дроздова",
+  "email": "user03@example.com",
+  "city": "Новосибирск",
+  "registered": {
+   "$date": "2025-07-26T00:00:00.000Z"
+  },
+  "segment": "vip",
+  "phone": "+7 997 857-52-43"
+ },
+ {
+  "_id": "c-004",
+  "name": "Пётр Ким",
+  "email": "user04@example.com",
+  "city": "Новосибирск",
+  "registered": {
+   "$date": "2025-09-12T00:00:00.000Z"
+  },
+  "segment": "постоянный",
+  "phone": "+7 922 293-78-94"
+ },
+ {
+  "_id": "c-005",
+  "name": "Ольга Синицына",
+  "email": "user05@example.com",
+  "city": "Санкт-Петербург",
+  "registered": {
+   "$date": "2026-02-22T00:00:00.000Z"
+  },
+  "segment": "постоянный",
+  "phone": "+7 918 148-36-41"
+ },
+ {
+  "_id": "c-006",
+  "name": "Дмитрий Волков",
+  "email": "user06@example.com",
+  "city": "Новосибирск",
+  "registered": {
+   "$date": "2026-04-08T00:00:00.000Z"
+  },
+  "segment": "постоянный",
+  "phone": "+7 955 185-71-55"
+ },
+ {
+  "_id": "c-007",
+  "name": "Елена Круглова",
+  "email": "user07@example.com",
+  "city": "Новосибирск",
+  "registered": {
+   "$date": "2026-04-22T00:00:00.000Z"
+  },
+  "segment": "постоянный",
+  "phone": "+7 980 961-74-42"
+ },
+ {
+  "_id": "c-008",
+  "name": "Артём Носов",
+  "email": "user08@example.com",
+  "city": "Екатеринбург",
+  "registered": {
+   "$date": "2025-07-10T00:00:00.000Z"
+  },
+  "segment": "vip",
+  "phone": "+7 920 766-25-85"
+ },
+ {
+  "_id": "c-009",
+  "name": "Светлана Гаева",
+  "email": "user09@example.com",
+  "city": "Ярославль",
+  "registered": {
+   "$date": "2025-06-06T00:00:00.000Z"
+  },
+  "segment": "vip",
+  "phone": "+7 945 357-54-98"
+ },
+ {
+  "_id": "c-010",
+  "name": "Роман Ильин",
+  "email": "user10@example.com",
+  "city": "Санкт-Петербург",
+  "registered": {
+   "$date": "2026-04-17T00:00:00.000Z"
+  },
+  "segment": "постоянный",
+  "phone": "+7 999 610-81-89"
+ },
+ {
+  "_id": "c-011",
+  "name": "Ксения Лаврова",
+  "email": "user11@example.com",
+  "city": "Екатеринбург",
+  "registered": {
+   "$date": "2026-03-09T00:00:00.000Z"
+  },
+  "segment": "vip",
+  "phone": "+7 928 109-65-56"
+ },
+ {
+  "_id": "c-012",
+  "name": "Никита Жуков",
+  "email": "user12@example.com",
+  "city": "Ярославль",
+  "registered": {
+   "$date": "2025-06-15T00:00:00.000Z"
+  },
+  "segment": "постоянный",
+  "phone": "+7 954 632-12-94"
+ },
+ {
+  "_id": "c-013",
+  "name": "Вера Панина",
+  "email": "user13@example.com",
+  "city": "Москва",
+  "registered": {
+   "$date": "2025-12-03T00:00:00.000Z"
+  },
+  "segment": "постоянный",
+  "phone": "+7 993 596-76-99"
+ },
+ {
+  "_id": "c-014",
+  "name": "Максим Седов",
+  "email": "user14@example.com",
+  "city": "Новосибирск",
+  "registered": {
+   "$date": "2025-07-08T00:00:00.000Z"
+  },
+  "segment": "постоянный",
+  "phone": "+7 973 360-65-47"
+ },
+ {
+  "_id": "c-015",
+  "name": "Юлия Ефимова",
+  "email": "user15@example.com",
+  "city": "Екатеринбург",
+  "registered": {
+   "$date": "2025-06-26T00:00:00.000Z"
+  },
+  "segment": "новый",
+  "phone": "+7 926 782-30-16"
+ },
+ {
+  "_id": "c-016",
+  "name": "Андрей Барсов",
+  "email": "user16@example.com",
+  "city": "Москва",
+  "registered": {
+   "$date": "2025-12-13T00:00:00.000Z"
+  },
+  "segment": "постоянный",
+  "phone": "+7 947 293-42-91"
+ },
+ {
+  "_id": "c-017",
+  "name": "Инна Королёва",
+  "email": "user17@example.com",
+  "city": "Санкт-Петербург",
+  "registered": {
+   "$date": "2025-11-29T00:00:00.000Z"
+  },
+  "segment": "постоянный",
+  "phone": "+7 973 853-79-93"
+ },
+ {
+  "_id": "c-018",
+  "name": "Тимур Ахметов",
+  "email": "user18@example.com",
+  "city": "Ярославль",
+  "registered": {
+   "$date": "2025-12-21T00:00:00.000Z"
+  },
+  "segment": "vip",
+  "phone": "+7 990 121-72-96"
+ },
+ {
+  "_id": "c-019",
+  "name": "Лидия Чернова",
+  "email": "user19@example.com",
+  "city": "Москва",
+  "registered": {
+   "$date": "2026-01-28T00:00:00.000Z"
+  },
+  "segment": "vip",
+  "phone": "+7 953 802-53-75"
+ },
+ {
+  "_id": "c-020",
+  "name": "Егор Мельник",
+  "email": "user20@example.com",
+  "city": "Ярославль",
+  "registered": {
+   "$date": "2025-11-15T00:00:00.000Z"
+  },
+  "segment": "новый",
+  "phone": "+7 986 746-85-18"
+ }
+]
