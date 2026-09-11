@@ -49,6 +49,13 @@ docker exec course-mongo mongosh sandbox --quiet --eval 'db.warehouse.countDocum
 * перед массовым обновлением — `count_documents` с тем же фильтром;
 * скрипт можно запустить дважды, и база придёт к тому же состоянию.
 
+## Язык — любой
+
+Контрольная точка проверяется по состоянию базы, а не по коду: `check.py`
+один на все языки. Драйверы ставятся так же, как в ПР-01 — `pymongo`,
+`gem mongo`, `go.mongodb.org/mongo-driver/v2` или `mongo-cxx-driver`.
+Адрес сервера все четыре читают из `MONGO_URI`.
+
 ## Подсказки, которых хватит
 
 * Пересчёт удобно грузить со своим `_id` — тогда повторная загрузка упрётся
@@ -69,7 +76,8 @@ python3 check.py
 
 ## Что сдаём
 
-1. `inventory.py` — ваш скрипт.
+1. `inventory.py`, `inventory.rb`, `inventory.go` или `inventory.cpp` — ваш
+   скрипт на том языке, на котором работаете.
 2. `inventory.md` — отчёт по бланку с числами вашего прогона.
 3. Вывод `python3 check.py`.
 

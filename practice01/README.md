@@ -64,14 +64,24 @@ catalog_page(category=None, page=1, per_page=5, sort_field="price", desc=True)
 
 ## Как запустить
 
+Решение есть на четырёх языках — берите тот, на котором работаете. Задача,
+числа и проверка одинаковые: `check.py` смотрит на состояние базы, а не на код.
+
 ```bash
-bash ../stend/load.sh          # чистые данные
-python3 solution.py            # эталонное решение
-python3 check.py               # самопроверка
+bash ../stend/load.sh          # чистые данные, перед каждым прогоном
+
+python3 solution.py            # Python  · pip install pymongo
+ruby solution.rb               # Ruby    · gem install mongo
+go run solution.go             # Go      · go get go.mongodb.org/mongo-driver/v2/mongo
+
+g++ -std=c++17 solution.cpp -o solution \
+    $(pkg-config --cflags --libs libmongocxx1) && ./solution   # C++ · brew install mongo-cxx-driver
+
+python3 check.py               # самопроверка, одна на все языки
 ```
 
-Нужен `pymongo`: `pip install pymongo`. Адрес сервера по умолчанию
-`mongodb://localhost:27017`, другой задаётся переменной `MONGO_URI`.
+Адрес сервера по умолчанию `mongodb://localhost:27017`, другой задаётся
+переменной `MONGO_URI` — её понимают все четыре решения.
 
 ## Что должно получиться
 
@@ -92,6 +102,6 @@ python3 check.py               # самопроверка
 
 ## Что сдавать
 
-Папку `practice01/` со своим `solution.py` и коротким `README.md`: как
-запустить и какие числа получились. Скриншот вывода `check.py` прикладывать
+Папку `practice01/` со своим решением (`solution.py`, `.rb`, `.go` или `.cpp` —
+на выбор) и коротким `README.md`: как запустить и какие числа получились. Скриншот вывода `check.py` прикладывать
 не нужно — проверка запускается на приёмке.
