@@ -22,6 +22,18 @@ bash ../stend/load.sh
 docker exec course-mongo mongosh sandbox --quiet --eval 'db.warehouse.countDocuments()'   # 21
 ```
 
+Через Docker, из корня репозитория (PowerShell и bash):
+
+```bash
+docker compose run --rm reset                           # учёт на 21 позицию
+docker compose run --rm python kt01/inventory.py        # или ruby/go/cpp с kt01/inventory.rb|go|cpp
+docker compose run --rm python kt01/check.py            # проверка
+```
+
+Скрипт запускается из папки `kt01`, поэтому `stocktake.json` открывается
+по короткому имени. Внутри контейнера сервер доступен по `MONGO_URI`
+(`mongodb://mongo:27017/`), а не по `localhost`.
+
 Эталонные базы `shop`, `hh`, `logs`, `org` в работе не участвуют и меняться
 не должны — это проверяется.
 

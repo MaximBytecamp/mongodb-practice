@@ -1,0 +1,28 @@
+{
+  // Стенд в браузере через GitHub Codespaces: ничего не нужно ставить на компьютер.
+  // Сервер, учебные базы и mongo-express поднимаются из того же compose.yaml.
+  "name": "mongodb-practice",
+  "dockerComposeFile": ["../compose.yaml", "compose.devcontainer.yaml"],
+  "service": "workspace",
+  "runServices": ["mongo", "seed", "mongo-express", "workspace"],
+  "workspaceFolder": "/workspaces/mongodb-practice",
+  "shutdownAction": "stopCompose",
+
+  "features": {
+    "ghcr.io/devcontainers/features/go:1": { "version": "1.25" },
+    "ghcr.io/devcontainers/features/ruby:1": { "version": "3.3" }
+  },
+
+  "postCreateCommand": "pip install --user -r requirements.txt && gem install mongo -v 2.21.0 --no-document",
+
+  "forwardPorts": ["mongo-express:8081"],
+  "portsAttributes": {
+    "mongo-express:8081": { "label": "mongo-express · student / student" }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "golang.go", "mongodb.mongodb-vscode"]
+    }
+  }
+}

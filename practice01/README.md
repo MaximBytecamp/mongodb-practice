@@ -83,6 +83,26 @@ python3 check.py               # самопроверка, одна на все 
 Адрес сервера по умолчанию `mongodb://localhost:27017`, другой задаётся
 переменной `MONGO_URI` — её понимают все четыре решения.
 
+### Через Docker
+
+Если сервер и драйверы не ставятся, всё запускается в контейнерах. Команды
+выполняются из **корня репозитория** и одинаковы в PowerShell и bash:
+
+```bash
+docker compose up -d                                  # один раз: сервер и учебные базы
+docker compose run --rm reset                         # чистые данные, перед каждым прогоном
+
+docker compose run --rm python practice01/solution.py
+docker compose run --rm ruby   practice01/solution.rb
+docker compose run --rm go     practice01/solution.go
+docker compose run --rm cpp    practice01/solution.cpp
+
+docker compose run --rm python practice01/check.py    # самопроверка
+```
+
+Своё решение запускается так же — поменяйте имя файла. Подробно, с ошибками
+и способом без установки — глава 1.1а справочника.
+
 ## Что должно получиться
 
 `check.py` печатает 12 строк и в конце «Пройдено 12 из 12». Ключевые числа:

@@ -1,0 +1,124 @@
+# Учебный стенд курса: сервер MongoDB, учебные базы, просмотр данных в браузере
+# и контейнеры с драйверами четырёх языков.
+#
+# Команды одинаковые в PowerShell, cmd и bash. Запускать из корня репозитория.
+#
+#   docker compose up -d                              сервер + учебные базы + mongo-express
+#   docker compose run --rm python practice01/solution.py
+#   docker compose run --rm python practice01/check.py
+#   docker compose run --rm reset                     вернуть базы в исходное состояние
+#   docker compose down                               остановить (данные остаются)
+#
+# Если порт 27017 или 8081 уже занят: MONGO_PORT=27018 или EXPRESS_PORT=8082
+# в файле .env рядом с этим файлом.
+
+name: mongodb-practice
+
+x-seed: &seed
+  image: mongo:7
+  depends_on:
+    mongo:
+      condition: service_healthy
+  volumes:
+    - ./stend/seed:/seed:ro
+  restart: "no"
+  command:
+    - bash
+    - -c
+    - |
+      count=$$(mongosh --host mongo --quiet --eval 'db.getSiblingDB("shop").orders.countDocuments()')
+      if [ "$$count" != "0" ] && [ -z "$$FORCE" ]; then
+        echo "Учебные базы уже загружены (shop.orders: $$count). Сброс: docker compose run --rm reset"
+        exit 0
+      fi
+      for file in /seed/*.json; do
+        name=$$(basename "$$file" .json)
+        mongoimport --host mongo --db "$${name%%.*}" --collection "$${name#*.}" \
+          --file "$$file" --jsonArray --drop --quiet
+        printf '%-22s <- %s\n' "$$name" "$$(basename "$$file")"
+      done
+      echo "Готово: учебные базы загружены"
+
+x-runner: &runner
+  profiles: ["tools"]
+  depends_on:
+    seed:
+      condition: service_completed_successfully
+  environment:
+    MONGO_URI: mongodb://mongo:27017/
+  volumes:
+    - .:/work
+  working_dir: /work
+  entrypoint: ["run"]
+
+services:
+  mongo:
+    image: mongo:7
+    container_name: course-mongo
+    ports:
+      - "${MONGO_PORT:-27017}:27017"
+    volumes:
+      - mongo-data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  # Заливает учебные базы, если сервер пустой, и завершается.
+  seed:
+    <<: *seed
+
+  # То же, но перезаписывает базы всегда: перед каждым прогоном практики.
+  reset:
+    <<: *seed
+    profiles: ["tools"]
+    environment:
+      FORCE: "1"
+
+  # Данные в браузере: http://localhost:8081, логин student, пароль student.
+  mongo-express:
+    image: mongo-express:1.0.2
+    depends_on:
+      mongo:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:${EXPRESS_PORT:-8081}:8081"
+    environment:
+      ME_CONFIG_MONGODB_URL: mongodb://mongo:27017/
+      ME_CONFIG_BASICAUTH_ENABLED: "true"
+      ME_CONFIG_BASICAUTH_USERNAME: student
+      ME_CONFIG_BASICAUTH_PASSWORD: student
+
+  # Запуск решений. Язык выбирается по расширению файла:
+  #   docker compose run --rm python practice01/solution.py
+  #   docker compose run --rm ruby   practice01/solution.rb
+  #   docker compose run --rm go     practice01/solution.go
+  #   docker compose run --rm cpp    practice01/solution.cpp
+  python:
+    <<: *runner
+    build: { context: ., dockerfile: docker/python.Dockerfile }
+    image: mongodb-practice/python
+
+  ruby:
+    <<: *runner
+    build: { context: ., dockerfile: docker/ruby.Dockerfile }
+    image: mongodb-practice/ruby
+
+  go:
+    <<: *runner
+    build: { context: ., dockerfile: docker/go.Dockerfile }
+    image: mongodb-practice/go
+    volumes:
+      - .:/work
+      - go-modules:/go/pkg/mod
+
+  # Первая сборка идёт несколько минут: драйвер C++ собирается из исходников.
+  cpp:
+    <<: *runner
+    build: { context: ., dockerfile: docker/cpp.Dockerfile }
+    image: mongodb-practice/cpp
+
+volumes:
+  mongo-data:
+  go-modules:

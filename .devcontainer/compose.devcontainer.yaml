@@ -1,0 +1,13 @@
+# Дополнение к ../compose.yaml для Codespaces: контейнер, в котором открывается редактор.
+# Пути считаются от корня репозитория — там лежит первый compose-файл.
+services:
+  workspace:
+    image: mcr.microsoft.com/devcontainers/python:3.12
+    command: sleep infinity
+    volumes:
+      - .:/workspaces/mongodb-practice:cached
+    environment:
+      MONGO_URI: mongodb://mongo:27017/
+    depends_on:
+      seed:
+        condition: service_completed_successfully
