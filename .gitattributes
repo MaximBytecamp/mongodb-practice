@@ -5,3 +5,6 @@
 *.yml    text eol=lf
 Dockerfile text eol=lf
 *.Dockerfile text eol=lf
+
+# load.ps1 запускают в Windows PowerShell: CRLF и BOM оставляем как есть
+*.ps1    -text

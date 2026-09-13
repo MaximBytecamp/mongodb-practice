@@ -107,11 +107,25 @@ codespace, когда закончили: **Code → Codespaces → … → Stop
 
 ### В. Сервер уже стоит
 
+Нужен `mongoimport` из MongoDB Command Line Database Tools.
+
 ```bash
-bash stend/load.sh                 # учебные базы в mongodb://localhost:27017
+bash stend/load.sh                 # macOS и Linux: учебные базы в mongodb://localhost:27017
 pip install -r requirements.txt
 cd practice01 && python3 solution.py && python3 check.py
 ```
+
+```powershell
+powershell -ExecutionPolicy Bypass -File stend\load.ps1    # Windows
+pip install -r requirements.txt
+cd practice01; python solution.py; python check.py
+```
+
+Без `mongoimport` базы можно загрузить вручную через Compass: **Create database**
+→ **Add data → Import JSON or CSV file**, по одному файлу из `stend/seed`.
+Имя файла подсказывает, куда класть: `shop.orders.json` — база `shop`,
+коллекция `orders`. Пошагово с кадрами — глава
+[1.0 справочника](https://maximbytecamp.github.io/mongodb_theory_makarov/temy/00-uchebnye-bazy/index.html).
 
 ## Учебные базы
 
