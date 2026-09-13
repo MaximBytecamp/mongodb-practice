@@ -60,7 +60,7 @@ def main():
         mismatched = [sku for sku, qty in counted.items() if actual.get(sku) != qty]
         check("учётные остатки совпали с фактом по всем позициям",
               not mismatched,
-              f"расходятся артикулы: {', '.join(sorted(mismatched)[:5])}")
+              "учёт ещё не совпадает с пересчётом: сверьте qty_accounted с полем counted по каждому артикулу")
         check("отметка о дате инвентаризации проставлена",
               warehouse.count_documents({"last_stocktake": {"$exists": True}}) > 0,
               "поле last_stocktake должно появиться у позиций с расхождением")
@@ -73,8 +73,8 @@ def main():
             item["sku"]
             for item in warehouse.find({"available": False}, {"_id": 0, "sku": 1})
         }
-        check("помечены все позиции с нулевым фактом", marked == zero_skus,
-              f"помечено позиций: {len(marked)}, а должно быть {len(zero_skus)}")
+        check("помечены все позиции с нулевым фактом", zero_skus <= marked,
+              "не у всех позиций с нулевым пересчётом стоит available: false")
         check("лишние позиции не помечены", not (marked - zero_skus),
               "под пометку попали позиции, на которых товар есть")
 
@@ -89,7 +89,7 @@ def main():
 
         print("\nЭталонные базы")
         check("shop.products не тронута", client["shop"]["products"].count_documents({}) == 21,
-              "правки должны идти только в sandbox; восстановите: bash ../stend/load.sh")
+              "правки должны идти только в sandbox; восстановите базы (глава 1.0 справочника, §8)")
         check("shop.orders не тронута", client["shop"]["orders"].count_documents({}) == 120)
 
         print()

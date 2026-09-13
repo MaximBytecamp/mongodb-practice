@@ -23,7 +23,7 @@ if (-not (Get-Command mongoimport -ErrorAction SilentlyContinue)) {
 Get-ChildItem -Path $seed -Filter "*.json" | Sort-Object Name | ForEach-Object {
   $name = $_.BaseName                      # например shop.orders
   $db, $collection = $name.Split(".", 2)
-  & mongoimport --uri $Uri --db $db --collection $collection --file $_.FullName --jsonArray --drop --quiet
+  & mongoimport --uri $Uri --db $db --collection $collection --file $_.FullName --jsonArray --drop --maintainInsertionOrder --quiet
   if ($LASTEXITCODE -ne 0) { throw "mongoimport не смог загрузить $($_.Name)" }
   "{0,-22} <- {1}" -f $name, $_.Name
 }

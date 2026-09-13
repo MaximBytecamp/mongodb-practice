@@ -6,8 +6,8 @@ services:
     command: sleep infinity
     volumes:
       - .:/workspaces/mongodb-practice:cached
-    environment:
-      MONGO_URI: mongodb://mongo:27017/
+    # Редактор в сети сервера: MongoDB доступна по mongodb://localhost:27017
+    network_mode: "service:mongo"
     depends_on:
       seed:
         condition: service_completed_successfully

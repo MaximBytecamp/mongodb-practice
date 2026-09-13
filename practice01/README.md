@@ -100,8 +100,9 @@ docker compose run --rm cpp    practice01/solution.cpp
 docker compose run --rm python practice01/check.py    # самопроверка
 ```
 
-Своё решение запускается так же — поменяйте имя файла. Подробно, с ошибками
-и способом без установки — глава 1.1а справочника.
+Своё решение запускается так же — меняется только путь: `work/practice01/solution.py`
+(см. «Где писать своё решение»). Подробно, с ошибками и способом без
+установки — глава 1.1а справочника.
 
 ## Что должно получиться
 
@@ -120,8 +121,53 @@ docker compose run --rm python practice01/check.py    # самопроверка
 Последняя строка — не формальность. Если она не сошлась, значит, правки ушли
 не в ту базу, и это ровно та ошибка, которая в проекте стоит дороже всего.
 
-## Что сдавать
+## Где писать своё решение и как сдать
 
-Папку `practice01/` со своим решением (`solution.py`, `.rb`, `.go` или `.cpp` —
-на выбор) и коротким `README.md`: как запустить и какие числа получились. Скриншот вывода `check.py` прикладывать
-не нужно — проверка запускается на приёмке.
+Файлы `solution.*` в этой папке — эталонные решения. Откройте их после своей
+попытки, чтобы сравнить. Своё решение вы пишете в собственном репозитории.
+
+1. Создайте на GitHub пустой репозиторий, например `mongodb-ivanov`:
+   **New repository**, без README и без `.gitignore`.
+2. Склонируйте его в папку `work` внутри `mongodb-practice`. Эта папка
+   исключена из репозитория практик, поэтому ваши файлы в него не попадут:
+
+   ```bash
+   cd mongodb-practice
+   git clone https://github.com/<ваш-логин>/mongodb-ivanov.git work
+   ```
+
+3. Создайте папку `work/practice01` и в ней файл решения на своём языке:
+   `solution.py`, `solution.rb`, `solution.go` или `solution.cpp`.
+   Для Go один раз подготовьте модуль в папке `work`:
+
+   ```bash
+   cd work
+   go mod init mongodb-work
+   go get go.mongodb.org/mongo-driver/v2/mongo
+   ```
+
+4. Запустите решение на чистых данных и проверку:
+
+   ```bash
+   docker compose run --rm reset
+   docker compose run --rm python work/practice01/solution.py
+   docker compose run --rm python practice01/check.py        # Пройдено 12 из 12
+   ```
+
+   Без Docker — из папки решения, а проверку из папки практики:
+   `cd work/practice01`, `python solution.py`, затем `cd ../../practice01`,
+   `python check.py` (на macOS и Linux — `python3`).
+
+5. Рядом с решением положите `README.md`: как запустить и какие числа
+   получились. Пяти строк достаточно.
+6. Отправьте работу на GitHub и пришлите ссылку на репозиторий:
+
+   ```bash
+   cd work
+   git add practice01
+   git commit -m "ПР-01: каталог товаров"
+   git push
+   ```
+
+Скриншот вывода `check.py` прикладывать не нужно: на приёмке решение
+запускается заново на свежих данных.

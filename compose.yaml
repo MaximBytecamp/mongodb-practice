@@ -34,7 +34,7 @@ x-seed: &seed
       for file in /seed/*.json; do
         name=$$(basename "$$file" .json)
         mongoimport --host mongo --db "$${name%%.*}" --collection "$${name#*.}" \
-          --file "$$file" --jsonArray --drop --quiet
+          --file "$$file" --jsonArray --drop --maintainInsertionOrder --quiet
         printf '%-22s <- %s\n' "$$name" "$$(basename "$$file")"
       done
       echo "Готово: учебные базы загружены"
@@ -44,8 +44,9 @@ x-runner: &runner
   depends_on:
     seed:
       condition: service_completed_successfully
-  environment:
-    MONGO_URI: mongodb://mongo:27017/
+  # Контейнер запуска подключён к сети сервера: внутри него MongoDB доступна
+  # по тому же адресу, что и на компьютере, — mongodb://localhost:27017.
+  network_mode: "service:mongo"
   volumes:
     - .:/work
   working_dir: /work

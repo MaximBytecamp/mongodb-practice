@@ -22,17 +22,19 @@ bash ../stend/load.sh
 docker exec course-mongo mongosh sandbox --quiet --eval 'db.warehouse.countDocuments()'   # 21
 ```
 
-Через Docker, из корня репозитория (PowerShell и bash):
+Через Docker, из корня репозитория (PowerShell и bash). Ваш скрипт лежит
+в собственном репозитории в папке `work/kt01` — как её завести, описано
+в разделе «Что сдаём»:
 
 ```bash
 docker compose run --rm reset                           # учёт на 21 позицию
-docker compose run --rm python kt01/inventory.py        # или ruby/go/cpp с kt01/inventory.rb|go|cpp
+docker compose run --rm python work/kt01/inventory.py   # или ruby/go/cpp с inventory.rb|go|cpp
 docker compose run --rm python kt01/check.py            # проверка
 ```
 
-Скрипт запускается из папки `kt01`, поэтому `stocktake.json` открывается
-по короткому имени. Внутри контейнера сервер доступен по `MONGO_URI`
-(`mongodb://mongo:27017/`), а не по `localhost`.
+Скрипт запускается из своей папки, поэтому `stocktake.json` рядом с ним
+открывается по короткому имени. Адрес сервера в контейнере тот же, что на
+компьютере, — `mongodb://localhost:27017`.
 
 Эталонные базы `shop`, `hh`, `logs`, `org` в работе не участвуют и меняться
 не должны — это проверяется.
@@ -88,9 +90,43 @@ python3 check.py
 
 ## Что сдаём
 
-1. `inventory.py`, `inventory.rb`, `inventory.go` или `inventory.cpp` — ваш
-   скрипт на том языке, на котором работаете.
-2. `inventory.md` — отчёт по бланку с числами вашего прогона.
-3. Вывод `python3 check.py`.
+Работа сдаётся из собственного репозитория — того же, что для ПР-01. Если его
+ещё нет:
 
-Ветка `kt-01`, Pull Request с коротким описанием.
+1. Создайте на GitHub пустой репозиторий, например `mongodb-ivanov`:
+   **New repository**, без README и без `.gitignore`.
+2. Склонируйте его в папку `work` внутри `mongodb-practice`. Эта папка
+   исключена из репозитория практик, поэтому ваши файлы в него не попадут:
+
+   ```bash
+   cd mongodb-practice
+   git clone https://github.com/<ваш-логин>/mongodb-ivanov.git work
+   ```
+
+Дальше:
+
+3. Создайте папку `work/kt01` и скопируйте в неё пересчёт и бланк отчёта:
+
+   ```bash
+   cp kt01/stocktake.json kt01/report_template.md work/kt01/          # macOS и Linux
+   ```
+
+   ```powershell
+   Copy-Item kt01\stocktake.json, kt01\report_template.md work\kt01\  # Windows
+   ```
+
+4. Напишите скрипт `inventory.py`, `inventory.rb`, `inventory.go` или
+   `inventory.cpp` и отчёт `inventory.md` по бланку.
+5. Проверьте на чистых данных: сброс, ваш скрипт, `kt01/check.py` — команды
+   в разделе «Подготовка». Запустите скрипт дважды: проверка должна пройти
+   и после второго запуска.
+6. Отправьте на GitHub и пришлите ссылку на репозиторий:
+
+   ```bash
+   cd work
+   git add kt01
+   git commit -m "КТ-01: инвентаризация склада"
+   git push
+   ```
+
+В `inventory.md` вставьте вывод `check.py` после второго запуска скрипта.
