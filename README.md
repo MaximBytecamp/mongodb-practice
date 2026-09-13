@@ -69,6 +69,24 @@ docker compose run --rm python practice01/check.py       # самопровер�
 
 Консоль сервера: `docker exec -it course-mongo mongosh`.
 
+Если порт 27017 уже занят (например, MongoDB установлена в систему), создайте
+в корне репозитория файл `.env` и подключайтесь к `localhost:27018`:
+
+```powershell
+Set-Content .env "MONGO_PORT=27018"      # Windows, PowerShell
+```
+
+```bash
+echo "MONGO_PORT=27018" > .env           # macOS и Linux
+```
+
+В PowerShell не используйте `echo … > .env`: Windows PowerShell 5 пишет такой
+файл в UTF-16, и Docker Compose его не прочитает.
+
+На Linux вместо Docker Desktop ставится Docker Engine:
+`curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh`,
+затем `sudo usermod -aG docker $USER` и повторный вход в систему.
+
 ### Б. Codespaces
 
 1. На странице репозитория: **Code → Codespaces → Create codespace on main**.
