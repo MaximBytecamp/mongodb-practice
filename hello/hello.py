@@ -1,13 +1,13 @@
 """Проверка подключения: что лежит на сервере.
 
-    docker compose run --rm python hello/hello.py    # из контейнера
+    docker compose run --rm python hello/hello.py    # в Docker
     python hello/hello.py                            # с компьютера, если стоит pymongo
 """
 
 import os
 from pymongo import MongoClient
 
-# В контейнере сервер называется mongo, на компьютере — localhost
+# Адрес берётся из MONGO_URI; без неё — стенд на localhost, и в Docker тоже
 URI = os.environ.get("MONGO_URI", "mongodb://localhost:27017/")
 client = MongoClient(URI, serverSelectionTimeoutMS=5000)
 

@@ -1,6 +1,6 @@
 // Проверка подключения: что лежит на сервере.
 //
-//     docker compose run --rm cpp hello/hello.cpp    // из контейнера: соберёт и запустит
+//     docker compose run --rm cpp hello/hello.cpp    // в Docker: соберёт и запустит
 
 #include <algorithm>
 #include <cstdlib>
@@ -20,7 +20,7 @@ using bsoncxx::builder::basic::make_document;
 int main() {
     mongocxx::instance instance{};
 
-    // В контейнере сервер называется mongo, на компьютере — localhost
+    // Адрес берётся из MONGO_URI; без неё — стенд на localhost, и в Docker тоже
     const char* env = std::getenv("MONGO_URI");
     const std::string uri = env ? env : "mongodb://localhost:27017";
     mongocxx::client client{mongocxx::uri{uri}};

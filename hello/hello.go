@@ -1,6 +1,6 @@
 // Проверка подключения: что лежит на сервере.
 //
-//	docker compose run --rm go hello/hello.go    // из контейнера
+//	docker compose run --rm go hello/hello.go    // в Docker
 //	cd hello && go run hello.go                  // с компьютера, если стоит Go
 package main
 
@@ -18,7 +18,7 @@ import (
 )
 
 func main() {
-	// В контейнере сервер называется mongo, на компьютере — localhost
+	// Адрес берётся из MONGO_URI; без неё — стенд на localhost, и в Docker тоже
 	uri := os.Getenv("MONGO_URI")
 	if uri == "" {
 		uri = "mongodb://localhost:27017"
