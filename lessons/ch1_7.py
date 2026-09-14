@@ -35,6 +35,7 @@ if orders_box.count_documents({}) == 0:
     orders_box.insert_many(orders.find())
 
 stats = client["sandbox"]["product_stats"]    # счётчики просмотров для §6
+stats.drop()                                  # каждый запуск заготовки считает с нуля
 from datetime import date
 today = date.today().isoformat()
 

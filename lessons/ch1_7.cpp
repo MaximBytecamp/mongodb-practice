@@ -74,6 +74,7 @@ int main() {
     }
 
     auto stats = client["sandbox"]["product_stats"];   // счётчики просмотров для §6
+    stats.drop();                                      // каждый запуск заготовки считает с нуля
     auto now = std::time(nullptr);
     std::ostringstream day;
     day << std::put_time(std::gmtime(&now), "%Y-%m-%d");

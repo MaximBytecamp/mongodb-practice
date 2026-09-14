@@ -83,6 +83,7 @@ func main() {
 	}
 
 	stats := client.Database("sandbox").Collection("product_stats") // счётчики просмотров для §6
+	stats.Drop(ctx)                                                 // каждый запуск заготовки считает с нуля
 	today := time.Now().Format("2006-01-02")
 	_, _, _ = ordersBox, stats, today
 

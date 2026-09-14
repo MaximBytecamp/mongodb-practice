@@ -34,6 +34,7 @@ orders_box = client.use("sandbox").database[:orders]   # копия заказо
 orders_box.insert_many(orders.find.to_a) if orders_box.count_documents({}).zero?
 
 stats = client.use("sandbox").database[:product_stats] # счётчики просмотров для §6
+stats.drop                                             # каждый запуск заготовки считает с нуля
 require "date"
 today = Date.today.iso8601
 
