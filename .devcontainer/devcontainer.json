@@ -15,9 +15,9 @@
 
   "postCreateCommand": "pip install --user -r requirements.txt && gem install mongo -v 2.21.0 --no-document",
 
-  "forwardPorts": ["mongo-express:8081"],
+  "forwardPorts": [8081],
   "portsAttributes": {
-    "mongo-express:8081": { "label": "mongo-express · student / student" }
+    "8081": { "label": "mongo-express · student / student" }
   },
 
   "customizations": {
