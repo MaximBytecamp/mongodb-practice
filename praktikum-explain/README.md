@@ -64,13 +64,20 @@ db.events.find({ level: "error" }).sort({ duration_ms: -1 }).limit(10)
 на вашем компьютере):
 
 ```bash
-docker compose exec -T mongo mongosh --quiet logs --eval '
-  EJSON.stringify(
-    db.events.find({ service: "payments", level: "error", duration_ms: { $gt: 500 } })
-             .sort({ ts: -1 })
-             .explain("executionStats")
-  )' > plan-1.json
+docker compose exec -T mongo mongosh --quiet logs --eval 'EJSON.stringify(db.events.find({ service: "payments", level: "error", duration_ms: { $gt: 500 } }).sort({ ts: -1 }).explain("executionStats"))' > plan-1.json
 ```
+
+В PowerShell вместо `>` нужен `Out-File` с явной кодировкой: обычное
+перенаправление в Windows PowerShell 5.1 сохраняет файл в UTF-16, и
+визуализатор такой файл не прочитает.
+
+```powershell
+docker compose exec -T mongo mongosh --quiet logs --eval 'EJSON.stringify(db.events.find({ service: "payments", level: "error", duration_ms: { $gt: 500 } }).sort({ ts: -1 }).explain("executionStats"))' | Out-File plan-1.json -Encoding utf8
+```
+
+Команда набирается одной строкой. Если разбить её на несколько строк и
+вставить в терминал целиком, оболочка выполнит каждую строку отдельно и
+команда оборвётся на первом переносе.
 
 Флаг `-T` отключает выделение терминала, без него перенаправление в файл
 ломается. `--quiet` убирает приветствие сервера, чтобы в файле остался
