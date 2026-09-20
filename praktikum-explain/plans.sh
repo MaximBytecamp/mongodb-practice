@@ -39,8 +39,10 @@ Q2='db.events.find({ level: "error" }).sort({ duration_ms: -1 }).limit(10)'
 plan() {
   local file="$1" query="$2" index="${3:-}" make="" drop=""
   if [ -n "$index" ]; then
-    make="db.events.createIndex($index, { name: 'praktikum' });"
-    drop="db.events.dropIndex('praktikum');"
+    # Имя индексу не задаём: в плане должно стоять то же имя, которое получит
+    # студент после обычного createIndex. Удаляем по описанию ключей.
+    make="db.events.createIndex($index);"
+    drop="db.events.dropIndex($index);"
   fi
 
   # Весь запуск обёрнут в функцию: mongosh печатает только то, что она вернула,

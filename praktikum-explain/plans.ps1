@@ -34,8 +34,10 @@ function Save-Plan($file, $query, $index) {
   $make = ""
   $drop = ""
   if ($index) {
-    $make = "db.events.createIndex($index, { name: 'praktikum' });"
-    $drop = "db.events.dropIndex('praktikum');"
+    # Имя индексу не задаём: в плане должно стоять то же имя, которое получит
+    # студент после обычного createIndex. Удаляем по описанию ключей.
+    $make = "db.events.createIndex($index);"
+    $drop = "db.events.dropIndex($index);"
   }
   # Весь запуск обёрнут в функцию: mongosh печатает только строку плана.
   $script = "(() => { $make const plan = EJSON.stringify($query.explain('executionStats')); $drop return plan; })()"
