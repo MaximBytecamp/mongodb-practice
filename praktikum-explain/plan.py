@@ -1,112 +1,117 @@
-"""Снимает план выполнения запроса практикума и кладёт его в файл.
+"""Снимает план выполнения запроса и кладёт его в файл JSON.
 
-Нужен там, где длинная команда mongosh не переживает копирования: в cmd.exe
-одинарные кавычки не экранируют, при вставке в несколько строк оболочка
-выполняет каждую строку отдельно. Здесь кавычек в командной строке нет совсем.
+Запрос задаётся здесь, в файле, а не в командной строке. Поэтому кавычки,
+фигурные скобки и знак $ нигде не проходят через оболочку — команда запуска
+одинаково работает в PowerShell, cmd.exe, Терминале macOS и Linux.
 
-    docker compose run --rm python praktikum-explain/plan.py 1 plan-1.json
-    docker compose run --rm python praktikum-explain/plan.py 2 plan-4.json
+    docker compose run --rm python work/praktikum-explain/plan.py
+    docker compose run --rm python work/praktikum-explain/plan.py plan-2.json
 
-Первый аргумент — номер запроса практикума (1 или 2), второй — имя файла.
-Файл ложится в work/praktikum-explain/ вашего репозитория; папку можно
-задать третьим аргументом (путь считается от корня mongodb-practice).
+Имя файла можно задать одним словом в конце команды — кавычек ему не нужно.
+Без него берётся FAYL из блока ниже.
 
-Индексы скрипт не трогает: он снимает план того состояния коллекции, которое
-вы сделали в оболочке. Поэтому порядок работы прежний — создали индекс в
-mongosh, сняли план этим скриптом, разобрали его на сайте.
+Индексы скрипт не создаёт и не удаляет: он снимает план того состояния
+коллекции, которое вы сделали в оболочке или в Compass.
 """
+
+from pymongo import MongoClient
+
+# ─────────────────────────────────────────────────────────────────────────
+#  ЗАПРОС. Меняете только этот блок.
+# ─────────────────────────────────────────────────────────────────────────
+
+BAZA = "logs"
+KOLLEKCIYA = "events"
+
+# Фильтр — тот же документ, что вы пишете в find({...}).
+FILTR = {
+    "service": "payments",
+    "level": "error",
+    "duration_ms": {"$gt": 500},
+}
+
+# Сортировка: список пар «поле, направление». 1 — по возрастанию, -1 — по
+# убыванию. Пустой список, если сортировки нет.
+SORTIROVKA = [("ts", -1)]
+
+# Сколько документов вернуть. 0 — все.
+PREDEL = 0
+
+# Куда положить план. Файл ложится рядом с этим скриптом.
+FAYL = "plan-1.json"
+
+# ─────────────────────────────────────────────────────────────────────────
+#  Дальше менять ничего не нужно.
+# ─────────────────────────────────────────────────────────────────────────
 
 import json
 import sys
 from pathlib import Path
 
 from bson.json_util import RELAXED_JSON_OPTIONS, dumps
-from pymongo import ASCENDING, DESCENDING, MongoClient
-
-# Запросы практикума. Ключ — номер, который студент указывает первым аргументом.
-QUERIES = {
-    "1": {
-        "opisanie": "ошибки payments дольше 500 мс, свежие сверху",
-        "filtr": {"service": "payments", "level": "error", "duration_ms": {"$gt": 500}},
-        "sort": [("ts", DESCENDING)],
-        "limit": 0,
-    },
-    "2": {
-        "opisanie": "десять самых долгих ошибок",
-        "filtr": {"level": "error"},
-        "sort": [("duration_ms", DESCENDING)],
-        "limit": 10,
-    },
-}
-
-PAPKA_PO_UMOLCHANIYU = "work/praktikum-explain"
 
 
-def podskazka(tekst: str) -> None:
+def oshibka(tekst):
     print(tekst, file=sys.stderr)
     sys.exit(2)
 
 
-def main() -> None:
-    if len(sys.argv) < 3:
-        podskazka(
-            "Укажите номер запроса и имя файла, например:\n"
-            "  docker compose run --rm python praktikum-explain/plan.py 1 plan-1.json"
-        )
+def shagi_plana(stadiya):
+    """Имена шагов снизу вверх: так же, как их рисует визуализатор."""
+    imena = []
+    while stadiya:
+        imena.append(stadiya["stage"])
+        stadiya = stadiya.get("inputStage")
+    return list(reversed(imena))
 
-    nomer, imya = sys.argv[1], sys.argv[2]
-    papka = sys.argv[3] if len(sys.argv) > 3 else PAPKA_PO_UMOLCHANIYU
 
-    if nomer not in QUERIES:
-        podskazka("Запрос бывает 1 или 2, а не %r. Смотрите README." % nomer)
+def main():
+    imya = sys.argv[1] if len(sys.argv) > 1 else FAYL
     if not imya.endswith(".json"):
-        podskazka("Имя файла должно оканчиваться на .json, например plan-1.json")
+        oshibka("Имя файла должно оканчиваться на .json, например plan-2.json")
 
-    zapros = QUERIES[nomer]
-
-    # Раннер подключён к сети сервера, поэтому адрес тот же, что и на компьютере.
+    # Раннер подключён к сети сервера: адрес тот же, что и на компьютере.
     client = MongoClient("mongodb://localhost:27017", serverSelectionTimeoutMS=5000)
     try:
         client.admin.command("ping")
     except Exception:
-        podskazka(
-            "Сервер не отвечает. Поднимите стенд: docker compose up -d\n"
-            "и залейте данные: docker compose run --rm reset"
+        oshibka(
+            "Сервер не отвечает. Поднимите стенд:  docker compose up -d\n"
+            "и залейте данные:                     docker compose run --rm reset"
         )
 
-    events = client["logs"]["events"]
-    if events.count_documents({}) == 0:
-        podskazka("Коллекция logs.events пуста. Залейте данные: docker compose run --rm reset")
+    kollekciya = client[BAZA][KOLLEKCIYA]
+    vsego = kollekciya.count_documents({})
+    if vsego == 0:
+        oshibka("Коллекция %s.%s пуста. Данные: docker compose run --rm reset"
+                % (BAZA, KOLLEKCIYA))
 
-    kursor = events.find(zapros["filtr"]).sort(zapros["sort"])
-    if zapros["limit"]:
-        kursor = kursor.limit(zapros["limit"])
+    kursor = kollekciya.find(FILTR)
+    if SORTIROVKA:
+        kursor = kursor.sort(SORTIROVKA)
+    if PREDEL:
+        kursor = kursor.limit(PREDEL)
+
     plan = kursor.explain()
+    stats = plan["executionStats"]
 
-    # Корень репозитория примонтирован в /work, вне контейнера это текущая папка.
-    koren = Path("/work") if Path("/work").is_dir() else Path.cwd()
-    cel = koren / papka
-    cel.mkdir(parents=True, exist_ok=True)
-    fayl = cel / imya
-
-    # dumps из bson пишет даты и числа BSON так, как их ждёт визуализатор плана.
+    # Файл кладём рядом со скриптом: студент запускает его из своей папки work.
+    fayl = Path(__file__).resolve().parent / imya
+    # dumps из bson пишет даты и числа BSON так, как их ждёт визуализатор.
     fayl.write_text(dumps(plan, json_options=RELAXED_JSON_OPTIONS), encoding="utf-8")
 
-    stats = plan["executionStats"]
-    shagi, shag = [], stats["executionStages"]
-    while shag:
-        shagi.append(shag["stage"])
-        shag = shag.get("inputStage")
-
-    print("Запрос %s — %s" % (nomer, zapros["opisanie"]))
-    print("  файл:                  %s/%s" % (papka, imya))
+    print("Запрос к %s.%s, всего документов в коллекции: %d" % (BAZA, KOLLEKCIYA, vsego))
+    print("  фильтр:                %s" % json.dumps(FILTR, ensure_ascii=False))
+    print("  сортировка:            %s" % (SORTIROVKA or "нет"))
+    print("  предел:                %s" % (PREDEL or "нет"))
+    print()
+    print("  файл с планом:         %s" % fayl.name)
     print("  возвращено:            %d" % stats["nReturned"])
     print("  документов просмотрено:%d" % stats["totalDocsExamined"])
     print("  ключей просмотрено:    %d" % stats["totalKeysExamined"])
-    print("  шаги плана:            %s" % " → ".join(reversed(shagi)))
-
-    indeksy = [i["name"] for i in events.list_indexes()]
-    print("  индексы коллекции:     %s" % ", ".join(indeksy))
+    print("  шаги плана:            %s" % " → ".join(shagi_plana(stats["executionStages"])))
+    print("  индексы коллекции:     %s"
+          % ", ".join(i["name"] for i in kollekciya.list_indexes()))
 
 
 if __name__ == "__main__":
