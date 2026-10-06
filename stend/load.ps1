@@ -1,10 +1,10 @@
-﻿# Заливка учебных данных в MongoDB — вариант для Windows PowerShell.
+﻿# Заливка данных курса в MongoDB — вариант для Windows PowerShell.
 #
 #   powershell -ExecutionPolicy Bypass -File stend\load.ps1
 #   powershell -ExecutionPolicy Bypass -File stend\load.ps1 -Uri mongodb://localhost:27018
 #
 # Нужен mongoimport из MongoDB Command Line Database Tools.
-# Скрипт полностью пересоздаёт учебные коллекции (--drop): повторный запуск
+# Скрипт полностью пересоздаёт коллекции курса (--drop): повторный запуск
 # безопасен и не двоит документы.
 
 param(

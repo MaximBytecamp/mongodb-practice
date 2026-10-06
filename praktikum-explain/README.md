@@ -12,7 +12,7 @@ https://maximbytecamp.github.io/mongodb_theory_makarov/praktiki/onlayn-razbor-za
 ## Стенд
 
 ```bash
-docker compose up -d                      # сервер и учебные базы
+docker compose up -d                      # сервер и базы курса
 docker compose run --rm reset             # исходное состояние: 1200 событий, индексов нет
 docker compose exec mongo mongosh logs    # оболочка на базе logs
 ```

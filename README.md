@@ -1,6 +1,6 @@
 # mongodb-practice — стенд и практики курса
 
-Репозиторий к «Справочнику по MongoDB»: учебные базы, практические работы с
+Репозиторий к «Справочнику по MongoDB»: базы курса, практические работы с
 готовыми решениями и контрольные точки.
 
 Справочник: **https://maximbytecamp.github.io/mongodb_theory_makarov/**
@@ -10,7 +10,7 @@
 ## Что внутри
 
 ```
-compose.yaml    стенд: сервер, учебные базы, mongo-express, запуск кода
+compose.yaml    стенд: сервер, базы курса, mongo-express, запуск кода
 docker/         образы с драйверами Python, Ruby, Go и C++
 .devcontainer/  тот же стенд в браузере через GitHub Codespaces
 stend/          данные: seed/*.json и load.sh для сервера без Docker
@@ -38,7 +38,7 @@ kt01/           КТ-01 «Инвентаризация склада»: зада�
 git clone https://github.com/MaximBytecamp/mongodb-practice.git
 cd mongodb-practice
 
-docker compose up -d                              # сервер + учебные базы + mongo-express
+docker compose up -d                              # сервер + базы курса + mongo-express
 docker compose run --rm python hello/hello.py     # проверка: Товаров 21, Заказов 120
 ```
 
@@ -47,7 +47,7 @@ docker compose run --rm python hello/hello.py     # проверка: Товар
 | Сервис | Адрес | Зачем |
 |---|---|---|
 | `mongo` | `mongodb://localhost:27017` | сервер MongoDB 7; к нему подключается и Compass, если он установлен |
-| `seed` | — | один раз заливает учебные базы и завершается |
+| `seed` | — | один раз заливает базы курса и завершается |
 | `mongo-express` | http://localhost:8081, `student` / `student` | базы и документы в браузере вместо Compass |
 | `python`, `ruby`, `go`, `cpp` | — | запускают решения; ставить языки на компьютер не нужно |
 
@@ -90,7 +90,7 @@ echo "MONGO_PORT=27018" > .env           # macOS и Linux
 ### Б. Codespaces
 
 1. На странице репозитория: **Code → Codespaces → Create codespace on main**.
-2. Подождать 3–5 минут: соберётся окружение, поднимутся сервер и учебные базы.
+2. Подождать 3–5 минут: соберётся окружение, поднимутся сервер и базы курса.
 3. В терминале редактора:
 
 ```bash
@@ -110,7 +110,7 @@ codespace, когда закончили: **Code → Codespaces → … → Stop
 Нужен `mongoimport` из MongoDB Command Line Database Tools.
 
 ```bash
-bash stend/load.sh                 # macOS и Linux: учебные базы в mongodb://localhost:27017
+bash stend/load.sh                 # macOS и Linux: базы курса в mongodb://localhost:27017
 pip install -r requirements.txt
 cd practice01 && python3 solution.py && python3 check.py
 ```
@@ -127,7 +127,7 @@ cd practice01; python solution.py; python check.py
 коллекция `orders`. Пошагово с кадрами — глава
 [1.0 справочника](https://maximbytecamp.github.io/mongodb_theory_makarov/temy/00-uchebnye-bazy/index.html).
 
-## Учебные базы
+## Базы курса
 
 | База | Коллекции | Для чего |
 |---|---|---|

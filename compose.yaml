@@ -1,9 +1,9 @@
-# Учебный стенд курса: сервер MongoDB, учебные базы, просмотр данных в браузере
+# Стенд курса: сервер MongoDB, базы курса, просмотр данных в браузере
 # и контейнеры с драйверами четырёх языков.
 #
 # Команды одинаковые в PowerShell, cmd и bash. Запускать из корня репозитория.
 #
-#   docker compose up -d                              сервер + учебные базы + mongo-express
+#   docker compose up -d                              сервер + базы курса + mongo-express
 #   docker compose run --rm python practice01/solution.py
 #   docker compose run --rm python practice01/check.py
 #   docker compose run --rm reset                     вернуть базы в исходное состояние
@@ -28,7 +28,7 @@ x-seed: &seed
     - |
       count=$$(mongosh --host mongo --quiet --eval 'db.getSiblingDB("shop").orders.countDocuments()')
       if [ "$$count" != "0" ] && [ -z "$$FORCE" ]; then
-        echo "Учебные базы уже загружены (shop.orders: $$count). Сброс: docker compose run --rm reset"
+        echo "Базы курса уже загружены (shop.orders: $$count). Сброс: docker compose run --rm reset"
         exit 0
       fi
       for file in /seed/*.json; do
@@ -37,7 +37,7 @@ x-seed: &seed
           --file "$$file" --jsonArray --drop --maintainInsertionOrder --quiet
         printf '%-22s <- %s\n' "$$name" "$$(basename "$$file")"
       done
-      echo "Готово: учебные базы загружены"
+      echo "Готово: базы курса загружены"
 
 x-runner: &runner
   profiles: ["tools"]
@@ -68,7 +68,7 @@ services:
       timeout: 5s
       retries: 12
 
-  # Заливает учебные базы, если сервер пустой, и завершается.
+  # Заливает базы курса, если сервер пустой, и завершается.
   seed:
     <<: *seed
 

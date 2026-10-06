@@ -89,7 +89,7 @@ python3 check.py               # самопроверка, одна на все 
 выполняются из **корня репозитория** и одинаковы в PowerShell и bash:
 
 ```bash
-docker compose up -d                                  # один раз: сервер и учебные базы
+docker compose up -d                                  # один раз: сервер и базы курса
 docker compose run --rm reset                         # чистые данные, перед каждым прогоном
 
 docker compose run --rm python practice01/solution.py
